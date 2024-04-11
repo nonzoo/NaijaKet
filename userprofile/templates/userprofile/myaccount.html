@@ -1,0 +1,64 @@
+{% extends 'core/base.html' %}
+{% load i18n %}
+
+{% block title %}My Account{% endblock %}
+
+{% block content %}
+<body>
+    <div class="container bg-gray-50 mx-auto p-4">
+        <h1 class="text-2xl font-bold mb-4">{% trans "My Account" %}</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="md:col-span-1">
+                {% if user.userprofile.company_image %}
+                    <img src="{{ user.userprofile.company_image.url }}" alt="Company Image" class="mt-2 w-full rounded-full">
+                {% else %}
+                    <img src="/media/uploads/profile.png" alt="profile pic">
+                {% endif %}
+            </div>
+            <div class="md:col-span-1">
+                <p class="mt-2 text-2xl">{{ user.username }}</p>
+            </div>
+
+            <div class="md:col-span-1">
+                <h2 class="text-lg font-semibold">{% trans "Email (contact us to change)" %}</h2>
+                <p class="mt-2">{{ user.email }}</p>
+            </div>
+            <div class="md:col-span-1">
+                <h2 class="text-lg font-semibold">WhatsApp</h2>
+                <p class="mt-2">{{ user.userprofile.company_whatsapp_number }}</p>
+            </div>
+            {% if user.userprofile.website %}
+            <div class="md:col-span-1">
+                <h2 class="text-lg font-semibold">{% trans "Company Website" %}</h2>
+                <a href="https://{{ user.userprofile.website }}"><p class="mt-2">{{ user.userprofile.website }}</p></a>
+            </div>
+            {% endif %}
+            <div class="md:col-span-1">
+                <h2 class="text-lg font-semibold">{% trans "State" %}</h2>
+                <p class="mt-2">{{ user.userprofile.state }}</p>
+            </div>
+            <div class="md:col-span-1">
+                <h2 class="text-lg font-semibold">{% trans "LGA" %}</h2>
+                <p class="mt-2">{{ user.userprofile.lga }}</p>
+            </div>
+            <div class="md:col-span-1">
+                <h2 class="text-lg font-semibold">{% trans "Address" %}</h2>
+                <p class="mt-2">{{ user.userprofile.company_address }}</p>
+            </div>
+            {% if user.userprofile.about %}
+            <div class="md:col-span-2">
+                <h2 class="text-lg text-justify font-semibold">{% trans "About" %}</h2>
+                <p class="mt-2">{{ user.userprofile.about }}</p>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+    <div class="flex justify-between items-center mt-4">
+        <a href="{% url 'edit_account' %}" class="inline-block py-4 px-6 rounded-xl text-white bg-purple-500 no-underline">{% trans "Edit" %}</a>
+        <hr class="flex-grow md:hidden border-t border-gray-400">
+        <a href="{% url 'logout' %}">
+            <button class="py-4 px-6 rounded-xl text-white bg-red-500 hover:bg-red-700">{% trans "Logout" %}</button>
+        </a>
+    </div>
+</body>
+{% endblock %}

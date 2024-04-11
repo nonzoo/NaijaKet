@@ -1,0 +1,88 @@
+{% extends 'core/base.html' %}
+{% block title %}Confirm Subscription{% endblock %}
+{% block meta %}
+<meta name="title" content="Subscribe to NaijaKet">
+{% endblock %}
+{% block content %}
+<div class="flex items-center justify-center min-h-screen">
+  <div class="w-full max-w-lg bg-gray-200 p-6 rounded-xl">
+    <h1 class="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-6">Confirm Subscription</h1>
+    <div>
+      <form id="paymentForm">
+        <h2 class="text-lg text-gray-800 mb-4">Your one month plan</h2>
+
+        <div class="mb-4">
+          <label for="first-name" class="text-gray-700">Full Name</label>
+          <input type="first-name" id="first-name" required class="block w-full rounded-md border-gray-600 focus:border-teal-500 focus:ring-teal-500">
+        </div>
+
+        <p class="text-gray-700">Amount:₦ {{ plan }}</p>
+        <button type="submit" onclick="payWithPaystack()" class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-2 px-4 rounded mt-4 w-full">
+          Confirm Subscription
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script src="https://js.paystack.co/v1/inline.js"></script>
+<script>
+  const paymentForm = document.getElementById('paymentForm');
+  paymentForm.addEventListener("submit", payWithPaystack, false);
+
+  function payWithPaystack(e) {
+    e.preventDefault();
+
+    let handler = PaystackPop.setup({
+      key: 'pk_live_2ffbe1a2d69ffbdeed2a8e2290717b72af2a0d01',
+      email: '{{request.user.email}}', //customer email
+      firstname: document.getElementById("first-name").value, // the customer username
+      lastname: '{{request.user.username}}',
+      plan : 'PLN_gvcsnw91zpbv9i3', // plan code
+      ref: 'NKet-' + Math.floor((Math.random() * 1000000000) + 1), // reference number
+      onClose: function () {
+        alert('Window closed.');
+      },
+      callback: function (response) {
+        updateVendorStatus(); // Call the function to update vendor status
+      }
+    });
+
+    handler.openIframe();
+  }
+//function to update the vendor status after payment
+  function updateVendorStatus() {
+    fetch("{% url 'update_vendor_status' %}", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "X-CSRFToken": getCookie("csrftoken") // Include the CSRF token for Django
+      },
+      body: JSON.stringify({ is_vendor: true })
+    })
+    .then(response => response.json())
+    .then(data => {
+      window.location.href = "{% url 'my_store' %}";
+    })
+    .catch(error => {
+      console.error("Error:", error);
+    });
+  }
+
+  // Helper function to get the CSRF token
+  function getCookie(name) {
+    let cookieValue = null;
+    if (document.cookie && document.cookie !== '') {
+      const cookies = document.cookie.split(';');
+      for (let i = 0; i < cookies.length; i++) {
+        const cookie = cookies[i].trim();
+        if (cookie.substring(0, name.length + 1) === (name + '=')) {
+          cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+          break;
+        }
+      }
+    }
+    return cookieValue;
+  }
+</script>
+{% endblock %}

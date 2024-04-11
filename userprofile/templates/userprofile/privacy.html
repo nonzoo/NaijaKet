@@ -1,0 +1,90 @@
+{% extends 'core/base.html' %}
+{% load i18n %}
+{% block title %}Privacy & Terms of use{% endblock %}
+
+{% block meta %}
+<meta name="description" content="Privacy Policy">
+<meta property="og:url" content="{{ protocol }}://{{ domain }}{% url 'privacy' %}">
+{% endblock %}
+
+{% block content %} 
+<div class="container mx-auto px-4">
+    <h1 class="text-3xl font-bold mb-6">{% trans "PRIVACY POLICY & TERMS OF USE" %}</h1>
+
+    <p>{% blocktrans %} "Welcome to NaijaKet.com, the Business-to-Business E-commerce Market.
+        When you utilize our services, such as bringing qualified buyers and sellers 
+        together to negotiate a business, you trust us with your information. 
+        We acknowledge the significance of this responsibility and strive to
+        safeguard your information while giving you control over it.{% endblocktrans %}</p>
+
+    <div class="mb-8">
+        <h2 class="text-2xl font-bold mb-4">{% trans "Information Collection and Use" %}</h2>
+        <p><strong>1.1 {% trans "Personal Information" %}:</strong>{% blocktrans %} In order to provide our services, we may collect certain personal information from you.
+            This may include your name, contact details, company information,
+            and any other information necessary to facilitate 
+            transactions and enhance your user experience.{% endblocktrans %}</p>
+
+        <p><strong>1.2 {% trans "Non-Personal Information" %}:</strong>{% blocktrans %} We may also collect non-personal information, such as usage data and demographic information,
+            to improve our services, analyze trends, and optimize user experience.
+            This information is collected through cookies and similar technologies.{% endblocktrans %}</p>
+    </div>
+
+    <div class="mb-8">
+        <h2 class="text-2xl font-bold mb-4">{% trans "Information Sharing" %}</h2>
+        <p><strong>2.1 {% trans "With Registered Companies and Businesses" %}:</strong> {% blocktrans %}To facilitate business negotiations and transactions,
+            we may share your personal information with registered
+            companies and businesses on our platform. 
+            This sharing of information is essential to 
+            connect buyers and sellers effectively.{% endblocktrans %}</p>
+
+        <p><strong>2.2 {% trans "Service Providers" %}:</strong> {% blocktrans %}We may engage third-party service providers to assist us in delivering our services.
+            These providers may have access to your personal information 
+            but are strictly obligated to use it solely for the purpose 
+            of providing the requested services.{% endblocktrans %}</p>
+
+        <p><strong>2.3 {% trans "Legal Requirements" %}:</strong> {% blocktrans %}We may disclose your information if required to do so by law or in 
+            response to valid legal requests from government authorities, 
+            court orders, or other legal processes.{% endblocktrans %}</p>
+    </div>
+
+    <div class="mb-8">
+        <h2 class="text-2xl font-bold mb-4">{% trans "Data Security" %}</h2>
+        <p><strong>3.1</strong> {% blocktrans %}We prioritize the security of your information and employ reasonable
+            measures to protect it from unauthorized access, disclosure, alteration,
+            or destruction. However, no method of transmission over the 
+            internet or electronic storage is entirely secure, 
+            and we cannot guarantee absolute security.{% endblocktrans %}</p>
+    </div>
+
+    <div class="mb-8">
+        <h2 class="text-2xl font-bold mb-4">{% trans "Third-Party Websites" %}</h2>
+        <p><strong>4.1</strong> {% blocktrans %}Our platform may contain links to third-party websites or services that are not operated
+            or controlled by us. We are not responsible for the privacy practices
+            or content of these third-party websites. We encourage you to 
+            review their privacy policies and terms of use before providingany personal information.{% endblocktrans %}</p>
+    </div>
+
+    <div class="mb-8">
+        <h2 class="text-2xl font-bold mb-4">{% trans "Consent and Changes to the Privacy Policy" %}</h2>
+        <p><strong>5.1</strong> {% blocktrans %}By using our services, you consent to the collection, use, and sharing of your 
+            information as outlined in this Privacy Policy. 
+            We reserve the right to modify or update this policy at any time. 
+            We will notify you of any material changes by posting the updated policy on our website.{% endblocktrans %}</p>
+    </div>
+
+    <div class="mb-8">
+        <h2 class="text-2xl font-bold mb-4">{% trans "Terms of Use" %}</h2>
+        <p><strong>6.1 {% trans "User Obligations" %}:</strong> {% blocktrans %}As a user of our services, you agree to use the platform responsibly and in compliance with applicable laws and regulations. You are solely responsible for the accuracy of the information you provide and any consequences that may arise from its use.{% endblocktrans %}</p>
+
+        <p><strong>6.2 {% trans "Intellectual Property" %}:</strong> {% blocktrans %}All content and materials on our platform, including but not limited to text, graphics, logos, images, and software, are the intellectual property of NaijaKet.com or its licensors. You may not reproduce, distribute, modify, or exploit any of the content without prior written permission.{% endblocktrans %}</p>
+
+        <p><strong>6.3 {% trans "Limitation of Liability" %}:</strong> NaijaKet.com {% blocktrans %}shall not be held liable for any direct, indirect, incidental, consequential, or exemplary damages arising from the use or inability to use our services or any content on the platform.{% endblocktrans %}</p>
+        </div>
+
+    <p>{% blocktrans %}Please note that this privacy policy and terms of use are subject to change.
+        We encourage you to review them regularly. 
+        If you have any questions or concerns about our practices,
+        please{% endblocktrans %} <a href="mailto:theautoangol@outlook.com">{% trans "contact us" %}</a>.</p>
+    </div>
+    {% endblock %}
+    NaijaKet

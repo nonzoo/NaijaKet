@@ -1,0 +1,2294 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-10-10 12:25+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\core\templates\core\base.html:102
+msgid "Search...Products"
+msgstr "Procurar...produtos"
+
+#: .\core\templates\core\base.html:193
+msgid "About Us"
+msgstr "Sobre nós"
+
+#: .\core\templates\core\base.html:196
+msgid ""
+"\n"
+"              NaijaKet stands as the premier business-to-business (B2B) "
+"platform in Angola, uniting registered automotive and retail entities in a "
+"dynamic digital ecosystem. This platform transcends traditional industry "
+"boundaries, fostering collaborative relationships among companies, firms, "
+"and businesses. By offering innovative tools and tailored solutions,"
+msgstr ""
+"\n"
+" NaijaKet se destaca como o principal business-to-business (B2B) plataforma "
+"em Angola, unindo entidades automóveis e retalhistas registadas numa "
+"ecossistema digital dinâmico. Esta plataforma transcende a indústria "
+"tradicionallimites, promovendo relações colaborativas entre empresas, "
+"firmas, e empresas. Ao oferecer ferramentas inovadoras e soluções "
+"personalizadas,"
+
+#: .\core\templates\core\base.html:197
+msgid ""
+"NaijaKet empowers its members to navigate the intricacies of the automotive "
+"and retail sectors, ensuring operational efficiency, growth, and, above all, "
+"customer satisfaction. With a commitment to redefining the future of "
+"business in Angola, NaijaKet is more than just a transactional space; it's "
+"a thriving community where businesses converge to innovate and collectively "
+"succeed in an ever-evolving market."
+msgstr ""
+"NaijaKet capacita seus membros a navegar pelas complexidades do setor "
+"automotivoe varejo, garantindo eficiência operacional, crescimento e, acima "
+"de tudo, satisfação do cliente. Com o compromisso de redefinir o futuro da "
+"negócios em Angola, a NaijaKet é mais do que um espaço transacional; éuma "
+"comunidade próspera onde as empresas convergem para inovar e "
+"coletivamenteter sucesso em um mercado em constante evolução."
+
+#: .\core\templates\core\base.html:203
+msgid "Mission/Purpose"
+msgstr "Missão/Propósito"
+
+#: .\core\templates\core\base.html:204
+msgid ""
+"Our mission is to facilitate transactions and ensure customer \n"
+"            satisfaction by providing an easy, secure, and transparent "
+"platform. \n"
+"            We are dedicated to simplifying the process of conducting "
+"business\n"
+"             while maintaining a high level of trust and integrity."
+msgstr ""
+"Nossa missão é facilitar transações e garantir a satisfação do cliente,"
+"fornecendo uma plataforma fácil, segura e transparente. Estamos dedicados a "
+"simplificar o processo de condução dos negócios, mantendo um alto nível de "
+"confiança e integridade."
+
+#: .\core\templates\core\base.html:210
+msgid "Vision"
+msgstr "Visão"
+
+#: .\core\templates\core\base.html:211
+msgid ""
+"In our unwavering commitment to excellence, NaijaKet is dedicated to "
+"delivering an extensive network of registered companies specializing in "
+"retail and automotive products and services. We prioritize providing a "
+"seamless, fast, and secure transaction experience, perfectly aligned with "
+"the burgeoning landscape of technological advancements."
+msgstr ""
+"No nosso compromisso inabalável com a excelência, a NaijaKet dedica-se "
+"aoferecendo uma extensa rede de empresas registradas especializadas "
+"emprodutos e serviços automotivos e de varejo. Priorizamos fornecer um "
+"experiência de transação perfeita, rápida e segura, perfeitamente alinhada "
+"como cenário florescente dos avanços tecnológicos."
+
+#: .\core\templates\core\base.html:212
+msgid ""
+"Our dynamic platform serves as a digital marketplace where businesses "
+"converge, fostering connections and transactions that transcend geographical "
+"boundaries. As a cornerstone of innovation, we leverage cutting-edge "
+"technology to ensure not only the efficiency of transactions but also the "
+"utmost satisfaction of our users. In this era of rapid technological growth, "
+"NaijaKet stands as a beacon, ushering in a new era of business interactions "
+"where convenience, security, and satisfaction converge harmoniously, shaping "
+"the future of commerce in Angola and beyond."
+msgstr ""
+"Nossa plataforma dinâmica serve como um mercado digital onde as "
+"empresasconvergem, promovendo conexões e transações que transcendem a "
+"geografialimites. Como pedra angular da inovação, aproveitamos o que há de "
+"mais modernotecnologia para garantir não só a eficiência das transações, mas "
+"também amáxima satisfação de nossos usuários. Nesta era de rápido "
+"crescimento tecnológicoA NaijaKet é um farol, inaugurando uma nova era de "
+"interações comerciaisonde comodidade, segurança e satisfação convergem "
+"harmoniosamente, moldandoo futuro do comércio em Angola e não só."
+
+#: .\core\templates\core\base.html:220
+msgid "Social links"
+msgstr "Links sociais"
+
+#: .\core\templates\core\base.html:228
+msgid "Contact Us"
+msgstr "Contate-nos"
+
+#: .\core\templates\core\frontpage.html:64
+msgid "Welcome to our website!"
+msgstr "Bem-vindo ao nosso site!"
+
+#: .\core\templates\core\menu.html:41
+msgid "Categories"
+msgstr "Compre"
+
+#: .\store\templates\store\category_detail.html:12
+msgid "Subcategories"
+msgstr "Subcategorias"
+
+#: .\store\templates\store\category_detail.html:21
+msgid "No subcategories available in this category"
+msgstr "Nenhuma subcategoria disponível nesta categoria"
+
+#: .\store\templates\store\category_detail.html:27
+msgid "Products/Services under"
+msgstr "Produtos/Serviços em"
+
+#: .\store\templates\store\category_detail.html:41
+msgid "No products available in this category"
+msgstr "Nenhum produto disponível nesta categoria"
+
+#: .\store\templates\store\product_detail.html:97
+msgid "More from"
+msgstr "Mais de"
+
+#: .\store\templates\store\product_detail.html:118
+#: .\userprofile\templates\userprofile\product_form.html:30
+msgid "Brand"
+msgstr "N.I.F"
+
+#: .\store\templates\store\product_detail.html:124
+msgid "Model"
+msgstr "Modelo"
+
+#: .\store\templates\store\product_detail.html:132
+msgid "Condition"
+msgstr "Doença"
+
+#: .\store\templates\store\product_detail.html:138
+#: .\userprofile\templates\userprofile\product_form.html:40
+msgid "Description"
+msgstr "Descrição"
+
+#: .\store\templates\store\product_detail.html:143
+msgid "Important Safety Tips"
+msgstr "Dicas importantes de segurança"
+
+#: .\store\templates\store\product_detail.html:147
+msgid "Do not send any pre-payments"
+msgstr "Não envie nenhum pré-pagamento"
+
+#: .\store\templates\store\product_detail.html:151
+msgid "Meet the seller at a safe public place"
+msgstr "Encontre o vendedor em um local público seguro"
+
+#: .\store\templates\store\product_detail.html:155
+msgid "Inspect the goods to ensure they meet your needs"
+msgstr ""
+"Inspecione as mercadorias para garantir que elas atendam às suas necessidades"
+
+#: .\store\templates\store\product_detail.html:159
+msgid "Check all documentation and pay only if you are satisfied"
+msgstr "Verifique toda a documentação e pague somente se estiver satisfeito"
+
+#: .\store\templates\store\search.html:8
+msgid "Search"
+msgstr "Procurar"
+
+#: .\store\templates\store\search.html:15
+msgid "Search Result for"
+msgstr "Resultado da pesquisa por"
+
+#: .\store\templates\store\search.html:59
+msgid "There is no"
+msgstr "Não há"
+
+#: .\store\templates\store\search.html:59
+msgid "matching this query"
+msgstr "que correspondendo a esta consulta"
+
+#: .\store\templates\store\subcategory_detail.html:23
+msgid "No Products available in this Sub-Category."
+msgstr ""
+
+#: .\userprofile\templates\userprofile\edit_account.html:6
+msgid "Edit Account"
+msgstr "Editar conta"
+
+#: .\userprofile\templates\userprofile\edit_account.html:13
+msgid "Form submission failed!"
+msgstr "Falha no envio do formulário!"
+
+#: .\userprofile\templates\userprofile\edit_account.html:27
+msgid "Company Image"
+msgstr "Imagem da companhia"
+
+#: .\userprofile\templates\userprofile\edit_account.html:32
+#: .\userprofile\templates\userprofile\signup.html:20
+msgid "Company Name"
+msgstr "Nome da empresa"
+
+#: .\userprofile\templates\userprofile\edit_account.html:33
+msgid "To Change this"
+msgstr "Para mudar isso"
+
+#: .\userprofile\templates\userprofile\edit_account.html:33
+#: .\userprofile\templates\userprofile\privacy.html:87
+msgid "contact us"
+msgstr "Contate-nos"
+
+#: .\userprofile\templates\userprofile\edit_account.html:38
+msgid "WhatsApp Number"
+msgstr "Número do WhatsApp"
+
+#: .\userprofile\templates\userprofile\edit_account.html:43
+msgid "Company Website(Optional)"
+msgstr "Site da companhia(Opcional)"
+
+#: .\userprofile\templates\userprofile\edit_account.html:48
+#: .\userprofile\templates\userprofile\myaccount.html:37
+msgid "State"
+msgstr "Estado/Estada"
+
+#: .\userprofile\templates\userprofile\edit_account.html:53
+#: .\userprofile\templates\userprofile\myaccount.html:41
+msgid "LGA"
+msgstr "Cidade"
+
+#: .\userprofile\templates\userprofile\edit_account.html:58
+msgid "Company Address"
+msgstr "Endereço da companhia"
+
+#: .\userprofile\templates\userprofile\edit_account.html:63
+#: .\userprofile\templates\userprofile\myaccount.html:50
+#: .\userprofile\templates\userprofile\vendor_detail.html:38
+msgid "About"
+msgstr "Sobre"
+
+#: .\userprofile\templates\userprofile\edit_account.html:68
+msgid "Save"
+msgstr "Salvar"
+
+#: .\userprofile\templates\userprofile\edit_account.html:71
+msgid "Change password"
+msgstr "Alterar a senha"
+
+#: .\userprofile\templates\userprofile\login.html:10
+msgid "Log in"
+msgstr "Conecte-se"
+
+#: .\userprofile\templates\userprofile\login.html:15
+msgid "Username"
+msgstr "Nome de usuário"
+
+#: .\userprofile\templates\userprofile\login.html:20
+#: .\userprofile\templates\userprofile\password_reset_confirm.html:15
+#: .\userprofile\templates\userprofile\signup.html:40
+msgid "Password"
+msgstr "Senha"
+
+#: .\userprofile\templates\userprofile\login.html:41
+#: .\userprofile\templates\userprofile\signup.html:67
+msgid "Login"
+msgstr "Conecte-se"
+
+#: .\userprofile\templates\userprofile\login.html:44
+msgid "Don't have an account with us?"
+msgstr "Não tem uma conta conosco?"
+
+#: .\userprofile\templates\userprofile\login.html:44
+msgid "Sign Up"
+msgstr "Inscrever-se"
+
+#: .\userprofile\templates\userprofile\login.html:45
+msgid "Forgotten your password?"
+msgstr "Esqueceu sua senha?"
+
+#: .\userprofile\templates\userprofile\my_store.html:12
+#: .\userprofile\templates\userprofile\product_form.html:114
+msgid "My Store"
+msgstr "Minha Loja"
+
+#: .\userprofile\templates\userprofile\my_store.html:63
+msgid "Add Product"
+msgstr "Adicionar Produto"
+
+#: .\userprofile\templates\userprofile\my_store.html:64
+msgid "My Products"
+msgstr "Meu produtos"
+
+#: .\userprofile\templates\userprofile\my_store.html:80
+msgid "Status"
+msgstr "Status"
+
+#: .\userprofile\templates\userprofile\my_store.html:127
+msgid "Contact us to Unsubscribe"
+msgstr "Contate-nos para cancelar a inscriçã"
+
+#: .\userprofile\templates\userprofile\my_store.html:130
+msgid "You don't have any product yet...."
+msgstr "Você ainda não tem nenhum produto...."
+
+#: .\userprofile\templates\userprofile\myaccount.html:9
+msgid "My Account"
+msgstr "Minha conta"
+
+#: .\userprofile\templates\userprofile\myaccount.html:23
+msgid "Email (contact us to change)"
+msgstr "E-mail (entre em contato conosco para alterar)"
+
+#: .\userprofile\templates\userprofile\myaccount.html:32
+#: .\userprofile\templates\userprofile\vendor_detail.html:30
+msgid "Company Website"
+msgstr "Site da companhia"
+
+#: .\userprofile\templates\userprofile\myaccount.html:45
+#: .\userprofile\templates\userprofile\vendor_detail.html:34
+msgid "Address"
+msgstr "Endereço"
+
+#: .\userprofile\templates\userprofile\myaccount.html:57
+msgid "Edit"
+msgstr "Editar"
+
+#: .\userprofile\templates\userprofile\myaccount.html:60
+msgid "Logout"
+msgstr "Sair"
+
+#: .\userprofile\templates\userprofile\password_change_done.html:7
+msgid "Password change successful"
+msgstr "Alteração de senha bem-sucedida"
+
+#: .\userprofile\templates\userprofile\password_change_done.html:8
+msgid "Your password was changed."
+msgstr "Sua senha foi alterada"
+
+#: .\userprofile\templates\userprofile\password_change_done.html:11
+msgid "Please return to your Account"
+msgstr "Por favor, retorne à sua conta"
+
+#: .\userprofile\templates\userprofile\password_change_form.html:7
+msgid "Password change"
+msgstr "Mudança de senha"
+
+#: .\userprofile\templates\userprofile\password_change_form.html:8
+msgid ""
+"Please enter your old password, for security's sake, and then enter your new "
+"password twice so we can verify you typed it in correctly"
+msgstr ""
+"Por favor, digite sua senha antiga, por questão de segurança, e depois "
+"digite a nova senha duas vezes para que possamos verificar se você digitou "
+"corretamente"
+
+#: .\userprofile\templates\userprofile\password_reset_complete.html:7
+msgid "Password set"
+msgstr "Conjunto de senha"
+
+#: .\userprofile\templates\userprofile\password_reset_complete.html:8
+msgid "Your password has been set. You can"
+msgstr "Sua senha foi definida. Você pode"
+
+#: .\userprofile\templates\userprofile\password_reset_complete.html:8
+msgid "log in now"
+msgstr "fazer login agora"
+
+#: .\userprofile\templates\userprofile\password_reset_confirm.html:8
+#: .\userprofile\templates\userprofile\password_reset_done.html:7
+msgid "Reset your password"
+msgstr "Redefinir sua senha"
+
+#: .\userprofile\templates\userprofile\password_reset_confirm.html:11
+msgid "Please enter your new password twice"
+msgstr "Por favor digite sua nova senha duas vezes"
+
+#: .\userprofile\templates\userprofile\password_reset_confirm.html:19
+#: .\userprofile\templates\userprofile\signup.html:45
+msgid "Repeat password"
+msgstr "Repita a senha"
+
+#: .\userprofile\templates\userprofile\password_reset_confirm.html:36
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used. Please request a new password reset."
+msgstr ""
+"O link de redefinição de senha era inválido, possivelmente porque já foi "
+"usado. Solicite uma nova redefinição de senha."
+
+#: .\userprofile\templates\userprofile\password_reset_done.html:8
+msgid "We've emailed you instructions for setting your password"
+msgstr "Enviamos a você por e-mail instruções para definir sua senha"
+
+#: .\userprofile\templates\userprofile\password_reset_done.html:9
+msgid ""
+"If you don't receive an email, please make sure you've entered the email "
+"address you registered with."
+msgstr ""
+"Se você não receber um e-mail, certifique-se de inserir o e-mailendereço com "
+"o qual você se registrou."
+
+#: .\userprofile\templates\userprofile\password_reset_done.html:10
+msgid "If you have forgotten the email PLEASE contact us"
+msgstr "Se você esqueceu o e-mail POR FAVOR entre em contato conosco"
+
+#: .\userprofile\templates\userprofile\password_reset_form.html:8
+#: .\userprofile\templates\userprofile\password_reset_form.html:18
+msgid "Reset Password"
+msgstr "Redefinir senha"
+
+#: .\userprofile\templates\userprofile\password_reset_form.html:10
+msgid "The email you used to register with us"
+msgstr "O e-mail que você usou para se registrar conosco"
+
+#: .\userprofile\templates\userprofile\password_reset_form.html:13
+msgid "Email"
+msgstr "Email"
+
+#: .\userprofile\templates\userprofile\privacy.html:12
+msgid "PRIVACY POLICY & TERMS OF USE"
+msgstr "POLÍTICA DE PRIVACIDADE E TERMOS DE USO"
+
+#: .\userprofile\templates\userprofile\privacy.html:14
+msgid ""
+" \"Welcome to NaijaKet.com, the Business-to-Business E-commerce Market.\n"
+"        When you utilize our services, such as bringing qualified buyers and "
+"sellers \n"
+"        together to negotiate a business, you trust us with your "
+"information. \n"
+"        We acknowledge the significance of this responsibility and strive "
+"to\n"
+"        safeguard your information while giving you control over it."
+msgstr ""
+" \"Bem-vindo ao NaijaKet.com, o mercado de comércio eletrônico business-to-"
+"business.\n"
+" Quando você utiliza nossos serviços, como trazer compradores qualificados e "
+"vendedores\n"
+" juntos para negociar um negócio, você confia a nós o seu informações. \n"
+"Reconhecemos a importância desta responsabilidade e nos "
+"esforçamostoneladaproteja suas informações e ao mesmo tempo lhe dê controle "
+"sobre elas."
+
+#: .\userprofile\templates\userprofile\privacy.html:21
+msgid "Information Collection and Use"
+msgstr "Coleta e uso de informações"
+
+#: .\userprofile\templates\userprofile\privacy.html:22
+msgid "Personal Information"
+msgstr "Informações pessoais"
+
+#: .\userprofile\templates\userprofile\privacy.html:22
+msgid ""
+" In order to provide our services, we may collect certain personal "
+"information from you.\n"
+"            This may include your name, contact details, company "
+"information,\n"
+"            and any other information necessary to facilitate \n"
+"            transactions and enhance your user experience."
+msgstr ""
+" Para fornecer nossos serviços, podemos coletar determinados dados pessoais "
+"informações suas.\n"
+"Isso pode incluir seu nome, detalhes de contato, empresainformações,\n"
+" e qualquer outra informação necessária para facilitar \n"
+"transações e aprimore sua experiência de usuário."
+
+#: .\userprofile\templates\userprofile\privacy.html:27
+msgid "Non-Personal Information"
+msgstr "Informações não pessoais"
+
+#: .\userprofile\templates\userprofile\privacy.html:27
+msgid ""
+" We may also collect non-personal information, such as usage data and "
+"demographic information,\n"
+"            to improve our services, analyze trends, and optimize user "
+"experience.\n"
+"            This information is collected through cookies and similar "
+"technologies."
+msgstr ""
+" Também podemos coletar informações não pessoais, como dados de uso e "
+"informações demográficas,\n"
+"para melhorar nossos serviços, analisar tendências e otimizar o "
+"usuárioexperiência.\n"
+"Esta informação é recolhida através de cookies e similarestecnologias."
+
+#: .\userprofile\templates\userprofile\privacy.html:33
+msgid "Information Sharing"
+msgstr "Compartilhamento de informações"
+
+#: .\userprofile\templates\userprofile\privacy.html:34
+msgid "With Registered Companies and Businesses"
+msgstr "Com empresas e negócios registrados"
+
+#: .\userprofile\templates\userprofile\privacy.html:34
+msgid ""
+"To facilitate business negotiations and transactions,\n"
+"            we may share your personal information with registered\n"
+"            companies and businesses on our platform. \n"
+"            This sharing of information is essential to \n"
+"            connect buyers and sellers effectively."
+msgstr ""
+"Para facilitar negociações e transações comerciais,\n"
+"podemos compartilhar suas informações pessoais com usuários registrados\n"
+"empresas e negócios em nossa plataforma. \n"
+"Esse compartilhamento de informações é essencial para \n"
+"conectar compradores e vendedores de forma eficaz."
+
+#: .\userprofile\templates\userprofile\privacy.html:40
+msgid "Service Providers"
+msgstr "Provedores de serviço"
+
+#: .\userprofile\templates\userprofile\privacy.html:40
+msgid ""
+"We may engage third-party service providers to assist us in delivering our "
+"services.\n"
+"            These providers may have access to your personal information \n"
+"            but are strictly obligated to use it solely for the purpose \n"
+"            of providing the requested services."
+msgstr ""
+"Podemos contratar prestadores de serviços terceirizados para nos ajudar a "
+"entregar nossosserviços.\n"
+"Esses provedores podem ter acesso às suas informações pessoais \n"
+"mas são estritamente obrigados a usá-lo exclusivamente para o propósito \n"
+"de fornecer os serviços solicitados."
+
+#: .\userprofile\templates\userprofile\privacy.html:45
+msgid "Legal Requirements"
+msgstr "Requerimentos legais"
+
+#: .\userprofile\templates\userprofile\privacy.html:45
+msgid ""
+"We may disclose your information if required to do so by law or in \n"
+"            response to valid legal requests from government authorities, \n"
+"            court orders, or other legal processes."
+msgstr ""
+"Podemos divulgar suas informações se assim for exigido por lei ou em \n"
+"resposta a solicitações legais válidas de autoridades governamentais, \n"
+"ordens judiciais ou outros processos legais."
+
+#: .\userprofile\templates\userprofile\privacy.html:51
+msgid "Data Security"
+msgstr "Segurança de dados"
+
+#: .\userprofile\templates\userprofile\privacy.html:52
+msgid ""
+"We prioritize the security of your information and employ reasonable\n"
+"            measures to protect it from unauthorized access, disclosure, "
+"alteration,\n"
+"            or destruction. However, no method of transmission over the \n"
+"            internet or electronic storage is entirely secure, \n"
+"            and we cannot guarantee absolute security."
+msgstr ""
+"Priorizamos a segurança das suas informações e empregamos soluções "
+"razoáveis\n"
+"medidas para protegê-lo contra acesso e divulgação não "
+"autorizadosalteração,\n"
+"ou destruição. No entanto, nenhum método de transmissão pelo \n"
+"o armazenamento eletrônico ou na Internet é totalmente seguro, \n"
+"e não podemos garantir segurança absoluta."
+
+#: .\userprofile\templates\userprofile\privacy.html:60
+msgid "Third-Party Websites"
+msgstr "Sites de terceiros"
+
+#: .\userprofile\templates\userprofile\privacy.html:61
+msgid ""
+"Our platform may contain links to third-party websites or services that are "
+"not operated\n"
+"            or controlled by us. We are not responsible for the privacy "
+"practices\n"
+"            or content of these third-party websites. We encourage you to \n"
+"            review their privacy policies and terms of use before "
+"providingany personal information."
+msgstr ""
+"Nossa plataforma pode conter links para sites ou serviços de terceiros que "
+"sãonão operado\n"
+"ou controlado por nós. Não somos responsáveis pela privacidadepráticas\n"
+"ou conteúdo desses sites de terceiros. Recomendamos que você \n"
+" revise suas políticas de privacidade e termos de uso antes fornecendo "
+"qualquer informação pessoal."
+
+#: .\userprofile\templates\userprofile\privacy.html:68
+msgid "Consent and Changes to the Privacy Policy"
+msgstr "Consentimento e Alterações à Política de Privacidade"
+
+#: .\userprofile\templates\userprofile\privacy.html:69
+msgid ""
+"By using our services, you consent to the collection, use, and sharing of "
+"your \n"
+"            information as outlined in this Privacy Policy. \n"
+"            We reserve the right to modify or update this policy at any "
+"time. \n"
+"            We will notify you of any material changes by posting the "
+"updated policy on our website."
+msgstr ""
+"Ao utilizar nossos serviços, você concorda com a coleta, uso e "
+"compartilhamento deo seu ninformações conforme descrito nesta Política de "
+"Privacidade. \n"
+" Reservamo-nos o direito de modificar ou atualizar esta política a qualquer "
+"hora. \n"
+" Iremos notificá-lo sobre quaisquer alterações materiais postando o política "
+"atualizada em nosso site."
+
+#: .\userprofile\templates\userprofile\privacy.html:76
+msgid "Terms of Use"
+msgstr "Termos de uso"
+
+#: .\userprofile\templates\userprofile\privacy.html:77
+msgid "User Obligations"
+msgstr "Obrigações do usuário"
+
+#: .\userprofile\templates\userprofile\privacy.html:77
+msgid ""
+"As a user of our services, you agree to use the platform responsibly and in "
+"compliance with applicable laws and regulations. You are solely responsible "
+"for the accuracy of the information you provide and any consequences that "
+"may arise from its use."
+msgstr ""
+"Como usuário de nossos serviços, você concorda em usar a plataforma de forma "
+"responsável e conformidade com as leis e regulamentos aplicáveis. Você é o "
+"único responsávelpela exatidão das informações que você fornece e por "
+"quaisquer consequências quepode surgir do seu uso."
+
+#: .\userprofile\templates\userprofile\privacy.html:79
+msgid "Intellectual Property"
+msgstr "Propriedade intelectual"
+
+#: .\userprofile\templates\userprofile\privacy.html:79
+msgid ""
+"All content and materials on our platform, including but not limited to "
+"text, graphics, logos, images, and software, are the intellectual property "
+"of NaijaKet.com or its licensors. You may not reproduce, distribute, "
+"modify, or exploit any of the content without prior written permission."
+msgstr ""
+"Todo o conteúdo e materiais da nossa plataforma, incluindo, mas não se "
+"limitando atexto, gráficos, logotipos, imagens e software são propriedade "
+"intelectualde NaijaKet.com ou de seus licenciadores. Você não pode "
+"reproduzir, distribuir, modificar ou explorar qualquer conteúdo sem "
+"permissão prévia por escrito."
+
+#: .\userprofile\templates\userprofile\privacy.html:81
+msgid "Limitation of Liability"
+msgstr "Limitação de responsabilidade"
+
+#: .\userprofile\templates\userprofile\privacy.html:81
+msgid ""
+"shall not be held liable for any direct, indirect, incidental, "
+"consequential, or exemplary damages arising from the use or inability to use "
+"our services or any content on the platform."
+msgstr ""
+"não será responsabilizado por qualquer dano direto, indireto, incidental,"
+"danos consequenciais ou exemplares decorrentes do uso ou incapacidade de "
+"usonossos serviços ou qualquer conteúdo da plataforma."
+
+#: .\userprofile\templates\userprofile\privacy.html:84
+msgid ""
+"Please note that this privacy policy and terms of use are subject to "
+"change.\n"
+"        We encourage you to review them regularly. \n"
+"        If you have any questions or concerns about our practices,\n"
+"        please"
+msgstr ""
+"Observe que esta política de privacidade e termos de uso estão sujeitos "
+"aalterar.\n"
+" Recomendamos que você os revise regularmente. \n"
+" Se você tiver alguma dúvida ou preocupação sobre nossas práticas,\n"
+"        por favor"
+
+#: .\userprofile\templates\userprofile\product_form.html:13
+msgid "Category"
+msgstr "Categoria"
+
+#: .\userprofile\templates\userprofile\product_form.html:18
+msgid "Subcategory"
+msgstr "Subcategoria"
+
+#: .\userprofile\templates\userprofile\product_form.html:25
+msgid "Title"
+msgstr "Título"
+
+#: .\userprofile\templates\userprofile\product_form.html:35
+msgid "Model(optional)"
+msgstr "Modelo (opcional)"
+
+#: .\userprofile\templates\userprofile\product_form.html:45
+msgid "Price"
+msgstr "Preço"
+
+#: .\userprofile\templates\userprofile\product_form.html:50
+#: .\userprofile\templates\userprofile\product_form.html:54
+#: .\userprofile\templates\userprofile\product_form.html:58
+#: .\userprofile\templates\userprofile\product_form.html:62
+#: .\venv\Lib\site-packages\django\db\models\fields\files.py:393
+msgid "Image"
+msgstr "Imagem"
+
+#: .\userprofile\templates\userprofile\product_form.html:66
+msgid "Condition (optional)"
+msgstr "Doença(Opcional)"
+
+#: .\userprofile\templates\userprofile\product_form.html:69
+msgid "Upload"
+msgstr "Carregar"
+
+#: .\userprofile\templates\userprofile\product_form.html:73
+msgid "Delete Product"
+msgstr "Excluir produto"
+
+#: .\userprofile\templates\userprofile\product_form.html:113
+msgid "Please Subscribe"
+msgstr "Por favor inscreva-se"
+
+#: .\userprofile\templates\userprofile\signup.html:14
+msgid "Sign up"
+msgstr "Inscrever-se"
+
+#: .\userprofile\templates\userprofile\signup.html:25
+msgid "First name"
+msgstr "Primeiro nome"
+
+#: .\userprofile\templates\userprofile\signup.html:30
+msgid "Last name"
+msgstr "Sobrenome"
+
+#: .\userprofile\templates\userprofile\signup.html:66
+msgid "SignUp"
+msgstr "Inscrever-se"
+
+#: .\userprofile\templates\userprofile\signup.html:67
+msgid "Do you have an account with us?"
+msgstr "Você tem uma conta conosco?"
+
+#: .\userprofile\templates\userprofile\signup.html:68
+msgid "Privacy Policy & Terms of use"
+msgstr "Política de Privacidade e Termos de Uso"
+
+#: .\userprofile\templates\userprofile\vendor_detail.html:13
+msgid "page"
+msgstr "página"
+
+#: .\userprofile\templates\userprofile\vendor_detail.html:44
+msgid "Products/Goods"
+msgstr "Produtos/Mercadorias"
+
+#: .\userprofile\templates\userprofile\vendor_detail.html:57
+msgid "No Product under this Vendor"
+msgstr "Nenhum produto deste fornecedor"
+
+#: .\venv\Lib\site-packages\click\_termui_impl.py:496
+#, python-brace-format
+msgid "{editor}: Editing failed"
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\_termui_impl.py:500
+#, python-brace-format
+msgid "{editor}: Editing failed: {e}"
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\core.py:1097
+msgid "Aborted!"
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\core.py:1282
+#: .\venv\Lib\site-packages\click\decorators.py:495
+msgid "Show this message and exit."
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\core.py:1313
+#: .\venv\Lib\site-packages\click\core.py:1339
+#, python-brace-format
+msgid "(Deprecated) {text}"
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\core.py:1357
+msgid "Options"
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\core.py:1383
+#, python-brace-format
+msgid "Got unexpected extra argument ({args})"
+msgid_plural "Got unexpected extra arguments ({args})"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\click\core.py:1399
+msgid "DeprecationWarning: The command {name!r} is deprecated."
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\core.py:1605
+msgid "Commands"
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\core.py:1637
+msgid "Missing command."
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\core.py:1715
+msgid "No such command {name!r}."
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\core.py:2271
+msgid "Value must be an iterable."
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\core.py:2291
+#, python-brace-format
+msgid "Takes {nargs} values but 1 was given."
+msgid_plural "Takes {nargs} values but {len} were given."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\click\core.py:2734
+#, python-brace-format
+msgid "env var: {var}"
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\core.py:2764
+msgid "(dynamic)"
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\core.py:2777
+#, python-brace-format
+msgid "default: {default}"
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\core.py:2790
+msgid "required"
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\decorators.py:400
+#, python-format
+msgid "%(prog)s, version %(version)s"
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\decorators.py:464
+msgid "Show the version and exit."
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\exceptions.py:43
+#: .\venv\Lib\site-packages\click\exceptions.py:79
+#, python-brace-format
+msgid "Error: {message}"
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\exceptions.py:71
+#, python-brace-format
+msgid "Try '{command} {option}' for help."
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\exceptions.py:120
+#, python-brace-format
+msgid "Invalid value: {message}"
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\exceptions.py:122
+#, python-brace-format
+msgid "Invalid value for {param_hint}: {message}"
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\exceptions.py:178
+msgid "Missing argument"
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\exceptions.py:180
+msgid "Missing option"
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\exceptions.py:182
+msgid "Missing parameter"
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\exceptions.py:184
+#, python-brace-format
+msgid "Missing {param_type}"
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\exceptions.py:191
+#, python-brace-format
+msgid "Missing parameter: {param_name}"
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\exceptions.py:211
+#, python-brace-format
+msgid "No such option: {name}"
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\exceptions.py:223
+#, python-brace-format
+msgid "Did you mean {possibility}?"
+msgid_plural "(Possible options: {possibilities})"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\click\exceptions.py:261
+msgid "unknown error"
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\exceptions.py:268
+msgid "Could not open file {filename!r}: {message}"
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\parser.py:231
+msgid "Argument {name!r} takes {nargs} values."
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\parser.py:413
+msgid "Option {name!r} does not take a value."
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\parser.py:474
+msgid "Option {name!r} requires an argument."
+msgid_plural "Option {name!r} requires {nargs} arguments."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\click\shell_completion.py:316
+msgid "Shell completion is not supported for Bash versions older than 4.4."
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\shell_completion.py:322
+msgid "Couldn't detect Bash version, shell completion is not supported."
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\termui.py:160
+msgid "Repeat for confirmation"
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\termui.py:176
+msgid "Error: The value you entered was invalid."
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\termui.py:178
+#, python-brace-format
+msgid "Error: {e.message}"
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\termui.py:189
+msgid "Error: The two entered values do not match."
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\termui.py:245
+msgid "Error: invalid input"
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\termui.py:776
+msgid "Press any key to continue..."
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\types.py:265
+#, python-brace-format
+msgid ""
+"Choose from:\n"
+"\t{choices}"
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\types.py:297
+msgid "{value!r} is not {choice}."
+msgid_plural "{value!r} is not one of {choices}."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\click\types.py:387
+msgid "{value!r} does not match the format {format}."
+msgid_plural "{value!r} does not match the formats {formats}."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\click\types.py:409
+msgid "{value!r} is not a valid {number_type}."
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\types.py:465
+#, python-brace-format
+msgid "{value} is not in the range {range}."
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\types.py:606
+msgid "{value!r} is not a valid boolean."
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\types.py:630
+msgid "{value!r} is not a valid UUID."
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\types.py:811
+msgid "file"
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\types.py:813
+msgid "directory"
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\types.py:815
+msgid "path"
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\types.py:861
+msgid "{name} {filename!r} does not exist."
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\types.py:870
+msgid "{name} {filename!r} is a file."
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\types.py:878
+#, python-brace-format
+msgid "{name} '{filename}' is a directory."
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\types.py:887
+msgid "{name} {filename!r} is not readable."
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\types.py:896
+msgid "{name} {filename!r} is not writable."
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\types.py:905
+msgid "{name} {filename!r} is not executable."
+msgstr ""
+
+#: .\venv\Lib\site-packages\click\types.py:972
+#, python-brace-format
+msgid "{len_type} values are required, but {len_value} was given."
+msgid_plural "{len_type} values are required, but {len_value} were given."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\crispy_forms\tests\test_form_helper.py:129
+#: .\venv\Lib\site-packages\crispy_forms\tests\test_form_helper.py:139
+#: .\venv\Lib\site-packages\django\forms\fields.py:91
+msgid "This field is required."
+msgstr ""
+
+#: .\venv\Lib\site-packages\crispy_forms\tests\test_layout.py:392
+msgid "i18n text"
+msgstr ""
+
+#: .\venv\Lib\site-packages\crispy_forms\tests\test_layout.py:394
+msgid "i18n legend"
+msgstr ""
+
+#: .\venv\Lib\site-packages\crispy_forms\tests\test_layout_objects.py:142
+#: .\venv\Lib\site-packages\django\core\validators.py:22
+msgid "Enter a valid value."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\contrib\messages\apps.py:15
+msgid "Messages"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\contrib\sitemaps\apps.py:8
+msgid "Site Maps"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\contrib\staticfiles\apps.py:9
+msgid "Static Files"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\contrib\syndication\apps.py:7
+#, fuzzy
+#| msgid "Condition"
+msgid "Syndication"
+msgstr "Doença"
+
+#. Translators: String used to replace omitted page numbers in elided page
+#. range generated by paginators, e.g. [1, 2, '…', 5, 6, 7, '…', 9, 10].
+#: .\venv\Lib\site-packages\django\core\paginator.py:30
+msgid "…"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\paginator.py:50
+msgid "That page number is not an integer"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\paginator.py:52
+msgid "That page number is less than 1"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\paginator.py:54
+msgid "That page contains no results"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:104
+#: .\venv\Lib\site-packages\django\forms\fields.py:749
+msgid "Enter a valid URL."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:164
+msgid "Enter a valid integer."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:175
+msgid "Enter a valid email address."
+msgstr ""
+
+#. Translators: "letters" means latin letters: a-z and A-Z.
+#: .\venv\Lib\site-packages\django\core\validators.py:256
+msgid ""
+"Enter a valid “slug” consisting of letters, numbers, underscores or hyphens."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:264
+msgid ""
+"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or "
+"hyphens."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:276
+#: .\venv\Lib\site-packages\django\core\validators.py:284
+#: .\venv\Lib\site-packages\django\core\validators.py:313
+msgid "Enter a valid IPv4 address."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:293
+#: .\venv\Lib\site-packages\django\core\validators.py:314
+msgid "Enter a valid IPv6 address."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:305
+#: .\venv\Lib\site-packages\django\core\validators.py:312
+msgid "Enter a valid IPv4 or IPv6 address."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:348
+msgid "Enter only digits separated by commas."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:354
+#, python-format
+msgid "Ensure this value is %(limit_value)s (it is %(show_value)s)."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:389
+#, python-format
+msgid "Ensure this value is less than or equal to %(limit_value)s."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:398
+#, python-format
+msgid "Ensure this value is greater than or equal to %(limit_value)s."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:407
+#, python-format
+msgid "Ensure this value is a multiple of step size %(limit_value)s."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:417
+#, python-format
+msgid ""
+"Ensure this value has at least %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at least %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:435
+#, python-format
+msgid ""
+"Ensure this value has at most %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at most %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:458
+#: .\venv\Lib\site-packages\django\forms\fields.py:347
+#: .\venv\Lib\site-packages\django\forms\fields.py:386
+msgid "Enter a number."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:460
+#, python-format
+msgid "Ensure that there are no more than %(max)s digit in total."
+msgid_plural "Ensure that there are no more than %(max)s digits in total."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:465
+#, python-format
+msgid "Ensure that there are no more than %(max)s decimal place."
+msgid_plural "Ensure that there are no more than %(max)s decimal places."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:470
+#, python-format
+msgid ""
+"Ensure that there are no more than %(max)s digit before the decimal point."
+msgid_plural ""
+"Ensure that there are no more than %(max)s digits before the decimal point."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:541
+#, python-format
+msgid ""
+"File extension “%(extension)s” is not allowed. Allowed extensions are: "
+"%(allowed_extensions)s."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:602
+msgid "Null characters are not allowed."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\base.py:1423
+#: .\venv\Lib\site-packages\django\forms\models.py:893
+#, fuzzy
+#| msgid "Brand"
+msgid "and"
+msgstr "N.I.F"
+
+#: .\venv\Lib\site-packages\django\db\models\base.py:1425
+#, python-format
+msgid "%(model_name)s with this %(field_labels)s already exists."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\constraints.py:17
+#, python-format
+msgid "Constraint “%(name)s” is violated."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:128
+#, python-format
+msgid "Value %(value)r is not a valid choice."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:129
+msgid "This field cannot be null."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:130
+msgid "This field cannot be blank."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:131
+#, python-format
+msgid "%(model_name)s with this %(field_label)s already exists."
+msgstr ""
+
+#. Translators: The 'lookup_type' is one of 'date', 'year' or
+#. 'month'. Eg: "Title must be unique for pub_date year"
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:135
+#, python-format
+msgid ""
+"%(field_label)s must be unique for %(date_field_label)s %(lookup_type)s."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:173
+#, python-format
+msgid "Field of type: %(field_type)s"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1094
+#, python-format
+msgid "“%(value)s” value must be either True or False."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1095
+#, python-format
+msgid "“%(value)s” value must be either True, False, or None."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1097
+msgid "Boolean (Either True or False)"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1147
+#, python-format
+msgid "String (up to %(max_length)s)"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1149
+msgid "String (unlimited)"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1253
+msgid "Comma-separated integers"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1354
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid date format. It must be in YYYY-MM-DD "
+"format."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1358
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1493
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (YYYY-MM-DD) but it is an invalid "
+"date."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1362
+msgid "Date (without time)"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1489
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[."
+"uuuuuu]][TZ] format."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1497
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
+"[TZ]) but it is an invalid date/time."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1502
+msgid "Date (with time)"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1626
+#, python-format
+msgid "“%(value)s” value must be a decimal number."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1628
+msgid "Decimal number"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1791
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in [DD] [[HH:]MM:]ss[."
+"uuuuuu] format."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1795
+#, fuzzy
+#| msgid "Description"
+msgid "Duration"
+msgstr "Descrição"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1847
+#, fuzzy
+#| msgid "Address"
+msgid "Email address"
+msgstr "Endereço"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1872
+msgid "File path"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1950
+#, python-format
+msgid "“%(value)s” value must be a float."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1952
+msgid "Floating point number"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1992
+#, python-format
+msgid "“%(value)s” value must be an integer."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1994
+msgid "Integer"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2090
+msgid "Big (8 byte) integer"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2107
+msgid "Small integer"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2115
+#, fuzzy
+#| msgid "Address"
+msgid "IPv4 address"
+msgstr "Endereço"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2146
+#, fuzzy
+#| msgid "Address"
+msgid "IP address"
+msgstr "Endereço"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2239
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2240
+#, python-format
+msgid "“%(value)s” value must be either None, True or False."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2242
+msgid "Boolean (Either True, False or None)"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2293
+msgid "Positive big integer"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2308
+msgid "Positive integer"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2323
+msgid "Positive small integer"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2339
+#, python-format
+msgid "Slug (up to %(max_length)s)"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2375
+msgid "Text"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2450
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in HH:MM[:ss[.uuuuuu]] "
+"format."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2454
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is an "
+"invalid time."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2458
+msgid "Time"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2566
+msgid "URL"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2590
+msgid "Raw binary data"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2655
+#, python-format
+msgid "“%(value)s” is not a valid UUID."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2657
+msgid "Universally unique identifier"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\files.py:232
+msgid "File"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\json.py:26
+msgid "A JSON object"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\json.py:28
+msgid "Value must be valid JSON."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:919
+#, python-format
+msgid "%(model)s instance with %(field)s %(value)r does not exist."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:921
+msgid "Foreign Key (type determined by related field)"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:1212
+msgid "One-to-one relationship"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:1269
+#, python-format
+msgid "%(from)s-%(to)s relationship"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:1271
+#, python-format
+msgid "%(from)s-%(to)s relationships"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:1319
+msgid "Many-to-many relationship"
+msgstr ""
+
+#. Translators: If found as last label character, these punctuation
+#. characters will prevent the default label_suffix to be appended to the label
+#: .\venv\Lib\site-packages\django\forms\boundfield.py:184
+msgid ":?.!"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:298
+msgid "Enter a whole number."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:467
+#: .\venv\Lib\site-packages\django\forms\fields.py:1238
+msgid "Enter a valid date."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:490
+#: .\venv\Lib\site-packages\django\forms\fields.py:1239
+msgid "Enter a valid time."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:517
+msgid "Enter a valid date/time."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:551
+msgid "Enter a valid duration."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:552
+#, python-brace-format
+msgid "The number of days must be between {min_days} and {max_days}."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:618
+msgid "No file was submitted. Check the encoding type on the form."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:619
+msgid "No file was submitted."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:620
+msgid "The submitted file is empty."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:622
+#, python-format
+msgid "Ensure this filename has at most %(max)d character (it has %(length)d)."
+msgid_plural ""
+"Ensure this filename has at most %(max)d characters (it has %(length)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:627
+msgid "Please either submit a file or check the clear checkbox, not both."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:691
+msgid ""
+"Upload a valid image. The file you uploaded was either not an image or a "
+"corrupted image."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:854
+#: .\venv\Lib\site-packages\django\forms\fields.py:946
+#: .\venv\Lib\site-packages\django\forms\models.py:1566
+#, python-format
+msgid "Select a valid choice. %(value)s is not one of the available choices."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:948
+#: .\venv\Lib\site-packages\django\forms\fields.py:1067
+#: .\venv\Lib\site-packages\django\forms\models.py:1564
+msgid "Enter a list of values."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:1068
+msgid "Enter a complete value."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:1307
+msgid "Enter a valid UUID."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:1337
+msgid "Enter a valid JSON."
+msgstr ""
+
+#. Translators: This is the default suffix added to form field labels
+#: .\venv\Lib\site-packages\django\forms\forms.py:98
+msgid ":"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\forms.py:244
+#: .\venv\Lib\site-packages\django\forms\forms.py:328
+#, python-format
+msgid "(Hidden field %(name)s) %(error)s"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\formsets.py:63
+#, python-format
+msgid ""
+"ManagementForm data is missing or has been tampered with. Missing fields: "
+"%(field_names)s. You may need to file a bug report if the issue persists."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\formsets.py:67
+#, python-format
+msgid "Please submit at most %(num)d form."
+msgid_plural "Please submit at most %(num)d forms."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\forms\formsets.py:72
+#, python-format
+msgid "Please submit at least %(num)d form."
+msgid_plural "Please submit at least %(num)d forms."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\forms\formsets.py:484
+#: .\venv\Lib\site-packages\django\forms\formsets.py:491
+msgid "Order"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\formsets.py:499
+msgid "Delete"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\models.py:886
+#, python-format
+msgid "Please correct the duplicate data for %(field)s."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\models.py:891
+#, python-format
+msgid "Please correct the duplicate data for %(field)s, which must be unique."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\models.py:898
+#, python-format
+msgid ""
+"Please correct the duplicate data for %(field_name)s which must be unique "
+"for the %(lookup)s in %(date_field)s."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\models.py:907
+msgid "Please correct the duplicate values below."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\models.py:1338
+msgid "The inline value did not match the parent instance."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\models.py:1429
+msgid "Select a valid choice. That choice is not one of the available choices."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\models.py:1568
+#, python-format
+msgid "“%(pk)s” is not a valid value."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\utils.py:226
+#, python-format
+msgid ""
+"%(datetime)s couldn’t be interpreted in time zone %(current_timezone)s; it "
+"may be ambiguous or it may not exist."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:463
+msgid "Clear"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:464
+msgid "Currently"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:465
+msgid "Change"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:794
+msgid "Unknown"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:795
+msgid "Yes"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:796
+msgid "No"
+msgstr ""
+
+#. Translators: Please do not add spaces around commas.
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:861
+msgid "yes,no,maybe"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:891
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:908
+#, python-format
+msgid "%(size)d byte"
+msgid_plural "%(size)d bytes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:910
+#, python-format
+msgid "%s KB"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:912
+#, python-format
+msgid "%s MB"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:914
+#, python-format
+msgid "%s GB"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:916
+#, python-format
+msgid "%s TB"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:918
+#, python-format
+msgid "%s PB"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:73
+msgid "p.m."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:74
+msgid "a.m."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:79
+msgid "PM"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:80
+msgid "AM"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:152
+msgid "midnight"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:154
+msgid "noon"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:7
+msgid "Monday"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:8
+msgid "Tuesday"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:9
+msgid "Wednesday"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:10
+msgid "Thursday"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:11
+msgid "Friday"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:12
+msgid "Saturday"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:13
+msgid "Sunday"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:16
+msgid "Mon"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:17
+msgid "Tue"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:18
+msgid "Wed"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:19
+msgid "Thu"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:20
+msgid "Fri"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:21
+#, fuzzy
+#| msgid "State"
+msgid "Sat"
+msgstr "Estado/Estada"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:22
+msgid "Sun"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:25
+msgid "January"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:26
+msgid "February"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:27
+#, fuzzy
+#| msgid "Search"
+msgid "March"
+msgstr "Procurar"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:28
+msgid "April"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:29
+msgid "May"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:30
+msgid "June"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:31
+msgid "July"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:32
+msgid "August"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:33
+msgid "September"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:34
+msgid "October"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:35
+msgid "November"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:36
+msgid "December"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:39
+msgid "jan"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:40
+msgid "feb"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:41
+msgid "mar"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:42
+msgid "apr"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:43
+msgid "may"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:44
+msgid "jun"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:45
+msgid "jul"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:46
+msgid "aug"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:47
+msgid "sep"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:48
+msgid "oct"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:49
+msgid "nov"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:50
+msgid "dec"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:53
+msgctxt "abbrev. month"
+msgid "Jan."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:54
+msgctxt "abbrev. month"
+msgid "Feb."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:55
+#, fuzzy
+#| msgid "Search"
+msgctxt "abbrev. month"
+msgid "March"
+msgstr "Procurar"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:56
+msgctxt "abbrev. month"
+msgid "April"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:57
+msgctxt "abbrev. month"
+msgid "May"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:58
+msgctxt "abbrev. month"
+msgid "June"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:59
+msgctxt "abbrev. month"
+msgid "July"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:60
+msgctxt "abbrev. month"
+msgid "Aug."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:61
+msgctxt "abbrev. month"
+msgid "Sept."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:62
+msgctxt "abbrev. month"
+msgid "Oct."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:63
+msgctxt "abbrev. month"
+msgid "Nov."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:64
+msgctxt "abbrev. month"
+msgid "Dec."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:67
+msgctxt "alt. month"
+msgid "January"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:68
+msgctxt "alt. month"
+msgid "February"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:69
+#, fuzzy
+#| msgid "Search"
+msgctxt "alt. month"
+msgid "March"
+msgstr "Procurar"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:70
+msgctxt "alt. month"
+msgid "April"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:71
+msgctxt "alt. month"
+msgid "May"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:72
+msgctxt "alt. month"
+msgid "June"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:73
+msgctxt "alt. month"
+msgid "July"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:74
+msgctxt "alt. month"
+msgid "August"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:75
+msgctxt "alt. month"
+msgid "September"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:76
+msgctxt "alt. month"
+msgid "October"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:77
+msgctxt "alt. month"
+msgid "November"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:78
+msgctxt "alt. month"
+msgid "December"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\ipv6.py:8
+msgid "This is not a valid IPv6 address."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\text.py:78
+#, python-format
+msgctxt "String to return when truncating text"
+msgid "%(truncated_text)s…"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\text.py:254
+msgid "or"
+msgstr ""
+
+#. Translators: This string is used as a separator between list elements
+#: .\venv\Lib\site-packages\django\utils\text.py:273
+#: .\venv\Lib\site-packages\django\utils\timesince.py:135
+msgid ", "
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:8
+#, python-format
+msgid "%(num)d year"
+msgid_plural "%(num)d years"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:9
+#, python-format
+msgid "%(num)d month"
+msgid_plural "%(num)d months"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:10
+#, python-format
+msgid "%(num)d week"
+msgid_plural "%(num)d weeks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:11
+#, python-format
+msgid "%(num)d day"
+msgid_plural "%(num)d days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:12
+#, python-format
+msgid "%(num)d hour"
+msgid_plural "%(num)d hours"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:13
+#, python-format
+msgid "%(num)d minute"
+msgid_plural "%(num)d minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:111
+msgid "Forbidden"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:112
+msgid "CSRF verification failed. Request aborted."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:116
+msgid ""
+"You are seeing this message because this HTTPS site requires a “Referer "
+"header” to be sent by your web browser, but none was sent. This header is "
+"required for security reasons, to ensure that your browser is not being "
+"hijacked by third parties."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:122
+msgid ""
+"If you have configured your browser to disable “Referer” headers, please re-"
+"enable them, at least for this site, or for HTTPS connections, or for “same-"
+"origin” requests."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:127
+msgid ""
+"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or "
+"including the “Referrer-Policy: no-referrer” header, please remove them. The "
+"CSRF protection requires the “Referer” header to do strict referer checking. "
+"If you’re concerned about privacy, use alternatives like <a rel=\"noreferrer"
+"\" …> for links to third-party sites."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:136
+msgid ""
+"You are seeing this message because this site requires a CSRF cookie when "
+"submitting forms. This cookie is required for security reasons, to ensure "
+"that your browser is not being hijacked by third parties."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:142
+msgid ""
+"If you have configured your browser to disable cookies, please re-enable "
+"them, at least for this site, or for “same-origin” requests."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:148
+msgid "More information is available with DEBUG=True."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:44
+msgid "No year specified"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:64
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:115
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:214
+msgid "Date out of range"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:94
+msgid "No month specified"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:147
+msgid "No day specified"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:194
+msgid "No week specified"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:349
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:380
+#, python-format
+msgid "No %(verbose_name_plural)s available"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:652
+#, python-format
+msgid ""
+"Future %(verbose_name_plural)s not available because %(class_name)s."
+"allow_future is False."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:692
+#, python-format
+msgid "Invalid date string “%(datestr)s” given format “%(format)s”"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\detail.py:56
+#, python-format
+msgid "No %(verbose_name)s found matching the query"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\list.py:70
+msgid "Page is not “last”, nor can it be converted to an int."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\list.py:77
+#, python-format
+msgid "Invalid page (%(page_number)s): %(message)s"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\generic\list.py:169
+#, python-format
+msgid "Empty list and “%(class_name)s.allow_empty” is False."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\static.py:38
+msgid "Directory indexes are not allowed here."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\static.py:40
+#, python-format
+msgid "“%(path)s” does not exist"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\static.py:79
+#, python-format
+msgid "Index of %(directory)s"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:7
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:221
+msgid "The install worked successfully! Congratulations!"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:207
+#, python-format
+msgid ""
+"View <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
+"target=\"_blank\" rel=\"noopener\">release notes</a> for Django %(version)s"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:222
+#, python-format
+msgid ""
+"You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
+"%(version)s/ref/settings/#debug\" target=\"_blank\" rel=\"noopener"
+"\">DEBUG=True</a> is in your settings file and you have not configured any "
+"URLs."
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:230
+msgid "Django Documentation"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:231
+msgid "Topics, references, &amp; how-to’s"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:239
+msgid "Tutorial: A Polling App"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:240
+msgid "Get started with Django"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:248
+msgid "Django Community"
+msgstr ""
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:249
+msgid "Connect, get help, or contribute"
+msgstr ""
+
+#: .\venv\Lib\site-packages\modeltranslation\widgets.py:24
+msgid "None"
+msgstr ""
+
+#: .\venv\Lib\site-packages\timezone_field\rest_framework.py:12
+msgid "A valid timezone is required."
+msgstr ""

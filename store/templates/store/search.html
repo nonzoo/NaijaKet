@@ -1,0 +1,65 @@
+{% extends 'core/base.html' %}
+{% load i18n %}
+{% block title %}Search{% endblock %}
+
+
+{% block content %}
+<div class="flex flex-col items-center justify-center">
+<h1 class="text-4xl">{% trans "Search" %}</h1>
+
+
+
+
+{% if page_obj %}
+<h2 class="text-2xl md:text-xs text-gray-600">
+    {% trans "Search Result for" %} "{{ query }}"
+</h2>
+<div class="bg-gray-100">
+    <div class="mx-auto px-4 py-16 sm:px-4 sm:py-24 lg:max-w-7xl lg:px-8">
+        <div class="grid grid-cols-2 gap-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+            {% for product in page_obj %}
+            <a href="{% url 'product_detail' product.category.slug product.subcategory.slug product.slug %}" class="group no-underline shadow-sm">
+                <div class="aspect-w-1 aspect-h-1 sm:aspect-w-1 sm:aspect-h-1 md:aspect-w-1 md:aspect-h-1 xl:aspect-w-1 xl:aspect-h-1">
+                    <div class="w-30 h-40 sm:w-30 sm:h-40 overflow-hidden rounded-s-xl bg-gray-200">
+                        <img src="{{ product.image.url }}" alt="Image of {{ product.title }}" class="object-cover object-center w-full h-full group-hover:opacity-75">
+                    </div>
+                </div>
+
+                <h3 class="mt-4 text-lg text-gray-700">{{ product.title }}</h3>
+                <p class="mt-1 text-xs font-medium text-gray-900">₦{{ product.formatted_price }}</p>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<div class="mt-8">
+    <div class="flex justify-center">
+        <div class="flex rounded-md mt-4">
+            {% if page_obj.has_previous %}
+            <a href="?page={{ page_obj.previous_page_number }}&query={{ query }}" class="no-underline mr-2 px-4 py-2 bg-gray-200 text-gray-700 text-sm font-medium rounded-md hover:bg-gray-300">Previous</a>
+            {% endif %}
+
+            {% for num in page_obj.paginator.page_range %}
+            {% if page_obj.number == num %}
+            <a href="?page={{ num }}&query={{ query }}" class="no-underline mr-2 px-4 py-2 bg-teal-500 text-white text-sm font-medium rounded-md hover:bg-teal-600">{{ num }}</a>
+            {% elif num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
+            <a href="?page={{ num }}&query={{ query }}" class="no-underline mr-2 px-4 py-2 bg-gray-200 text-gray-700 text-sm font-medium rounded-md hover:bg-gray-300">{{ num }}</a>
+            {% endif %}
+            {% endfor %}
+
+            {% if page_obj.has_next %}
+            <a href="?page={{ page_obj.next_page_number }}&query={{ query }}" class="no-underline mr-2 px-4 py-2 bg-gray-200 text-gray-700 text-sm font-medium rounded-md hover:bg-gray-300">Next</a>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% else %}
+<div class="min-h-screen flex flex-col items-center justify-center">
+    <h2 class="text-2xl lg:text-3xl text-red-600 text-center">{% trans "There is no" %}  "{{ query }}" {% trans "matching this query" %}</h2>
+  </div>
+  
+  
+{% endif %}
+</div>
+{% endblock %}

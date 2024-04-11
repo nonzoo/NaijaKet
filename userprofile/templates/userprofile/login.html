@@ -1,0 +1,56 @@
+{% extends 'core/base.html' %}
+{% load i18n %}
+{% block title %}Login{% endblock %}
+{% block meta %}
+<meta name="description" content="Naijaket login page">
+{% endblock %}
+{% block content %}
+<div class="max-w-lg mx-auto flex flex-wrap p-6">
+    <div class="w-full bg-gray-200 p-6 rounded-xl">
+        <h1 class="mb-6 text-2xl">{% trans "Log in" %}</h1>
+
+        <form method="post" action="." class="space-y-3">
+            {% csrf_token %}
+            <div>
+                <label>{% trans "Username" %}</label>
+                <input type="text" name="username" class="w-full mt-2 py-4 px-6 bg-white rounded-xl">
+            </div>
+
+            <div>
+                <label>{% trans "Password" %}</label>
+                <input type="password" name="password" class="w-full mt-2 py-4 px-6 bg-white rounded-xl">
+            </div>
+
+            {% if form.errors %}
+                {% for field in form %}
+                    {% for error in field.errors %}
+                        <div class="p-6 bg-red-200 text-red-800 rounded-xl">
+                            <p>{{ error|escape }}</p>
+                        </div>
+                    {% endfor %}
+                {% endfor %}
+
+                {% for error in form.non_field_errors %}
+                    <div class="p-6 bg-red-200 text-red-800 rounded-xl">
+                        <p>{{ error|escape }}</p>
+                    </div>
+                {% endfor %}
+            {% endif %}
+
+            <div>
+                <button class="py-4 px-6 rounded-xl text-white bg-teal-500 hover:bg-teal-800">{% trans "Login" %}</button>
+            </div>
+        </form>
+        <p>{% trans "Don't have an account with us?" %} <a href="{% url 'signup' %}" class="no-underline text-blue-500"> {% trans "Sign Up" %}</a></p>
+        <p><a href="{% url 'password_reset' %}">{% trans "Forgotten your password?" %}</a></p>
+    </div>
+</div>
+{% endblock %}
+
+
+
+
+
+
+
+

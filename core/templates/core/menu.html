@@ -1,0 +1,62 @@
+{% load i18n %}
+
+<!-- Custom styles for this template -->
+<div>
+  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark">
+    <i class="fa fa-bars" aria-hidden="true"></i>
+  </button>
+
+  <div class="offcanvas offcanvas-end text-bg-dark bg-gradient-to-bl from-teal-500 to-teal-600" tabindex="-1" id="offcanvasNavbarDark" aria-labelledby="offcanvasNavbarDarkLabel">
+    <div class="offcanvas-header">
+      <h2 class="offcanvas-title text-white" id="offcanvasNavbarDarkLabel">{% trans "Categories" %}</h2>
+      <button type="button" class="btn-close text-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+
+    <!-- Wrap the content in a scrollable container -->
+    <div class="offcanvas-body" style="max-height: 80vh; overflow-y: auto;">
+      <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="width: 280px;">
+        <!-- <div>Male</div>
+        <div>Female</div> -->
+        <div>
+          
+          <ul class="nav nav-pills flex-column mb-auto">
+            {% for category in categories %}
+            <li class="nav-item mb-1 mt-1">
+              <a class="nav-link text-white text-capitalize" href="{% url 'category_detail' category.slug %}">
+                {{ category.title }}
+              </a>
+            </li>
+            {% endfor %}
+          </ul>
+
+        </div>
+        
+
+        <hr>
+        <div class="dropdown">
+          <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6" aria-placeholder="My Account">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+          </a>
+          
+          <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+            {% if user.is_authenticated %}
+              <li><a class="dropdown-item" href="{% url 'edit_account' %}">{% trans "Edit Account" %}</a></li>
+              <li><a class="dropdown-item" href="{% url 'myaccount' %}">{% trans "My Account" %}</a></li>
+              
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="{% url 'logout' %}">{% trans "Logout" %}</a></li>
+            {% else %}
+              <li><a class="dropdown-item" href="{% url 'login' %}">{% trans "Login" %}</a></li>
+          
+            {% endif %}
+            
+          </ul>
+          
+        </div>
+      </div>
+    </div>
+  
+  </div>
+</div>

@@ -1,0 +1,41 @@
+{% extends 'core/base.html' %}
+{% block title %}Create Subscription{% endblock %}
+{% block content %}
+<div class="bg-gray-100 py-10">
+  <div class="max-w-3xl mx-auto px-4">
+    <h1 class="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-6">Why Should You Subscribe to NaijaKet?</h1>
+    <p class="text-lg text-gray-700 mb-4">By subscribing, you will have full access to your store. With NaijaKet, you can:</p>
+    <ul class="list-disc list-inside text-gray-700 mb-8">
+      <li>Add your products to your online store and reach a wider audience.</li>
+      <li>Sell your products to customers online, increasing your sales and revenue.</li>
+      <li>Edit your products anytime to keep your store up to date and offer new items.</li>
+      <li>Enable customers to view your profile and establish trust.</li>
+      <li>Showcase a variety of products available in your store, attracting more customers.</li>
+      <li>Promote your products on the homepage, gaining maximum visibility.</li>
+    </ul>
+  </div>
+
+  <div class="bg-gray-100 flex items-center justify-center py-10">
+    <div class="bg-white max-w-md w-full rounded-lg shadow-md p-6">
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-6">Create Subscription</h1>
+      <form action="{% url 'create_subscription' %}" method="post">
+        {% csrf_token %}
+
+        <div class="mb-6">
+          <p class="text-lg text-gray-800">Select a Plan:</p>
+          <div class="flex items-center mt-2">
+            <input type="radio" name="plan" id="plan" value="9000" required class="mr-2">
+            <label for="plan" class="text-gray-700">Plan - ₦9,000 for 1 month</label>
+          </div>
+        </div>
+
+        <div class="flex justify-center">
+          <button type="submit" class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-2 px-4 rounded">
+            Subscribe Now and Grow Your Online Business!
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}

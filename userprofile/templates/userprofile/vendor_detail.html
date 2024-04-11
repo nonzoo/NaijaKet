@@ -1,0 +1,87 @@
+{% extends 'core/base.html' %}
+{% load i18n %}
+{% block title %}{{ user.username }}{% endblock %}
+{% block meta %}
+<meta name="title" content="{{ user.username }}'s page">
+<meta property="og:image" content="{{ company_image.url }}">
+{% endblock %}  
+{% block content %}
+    <div class="container mx-auto py-8">
+        <div class="bg-white rounded-lg shadow-lg p-6">
+            <h1 class="text-3xl font-bold">{{ user.username }}</h1>
+
+            <h2 class="text-xl mb-4">{{ user.username }} {% trans "page" %}</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    {% if user.userprofile.company_image %}
+                        <img src="{{ user.userprofile.company_image.url }}" alt="Company Image" class="mt-2 w-full rounded-full">
+                    {% else %}
+                        <img src="/media/uploads/profile.png" alt="profile pic">
+                    {% endif %}
+                </div>
+                <div> 
+                    <h2 class="text-lg font-semibold">Email</h2>
+                    <p class="mt-2"><a href="mailto:{{ user.userprofile.company_email }}" class="no-underline">{{ user.email }}</a></p>
+                    <h2 class="text-lg font-semibold">WhatsApp</h2>
+                    <p class="mt-2"><a href="https://wa.me/{{ user.userprofile.company_whatsapp_number }}" class="no-underline">{{ user.userprofile.company_whatsapp_number }}</a></p>
+                    {% if user.userprofile.website %}
+                        <h2 class="text-lg font-semibold">{% trans "Company Website" %}</h2>
+                        <a href="https://{{ user.userprofile.website }}" class="text-blue-500 hover:underline">{{ user.userprofile.website }}</a>
+                    {% endif %}
+
+                    <h2 class="text-lg font-semibold">{% trans "Address" %}</h2>
+                    <p class="mt-2">{{ user.userprofile.company_address }}, {{ user.userprofile.lga }}, {{ user.userprofile.state }}</p>
+
+                    {% if user.userprofile.about %}
+                        <h2 class="text-lg font-semibold">{% trans "About" %}</h2>
+                        <p class="mt-2">{{ user.userprofile.about }}</p>
+                    {% endif %}
+                </div>
+            </div>
+
+            <div class="text-2xl text-black text-center mt-8">{{ user.username }} {% trans "Products/Goods" %}</div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-8">
+                {% for product in products %}
+                    <a href="{% url 'product_detail' product.category.slug product.subcategory.slug product.slug %}" class="block bg-white rounded-lg shadow-md overflow-hidden no-underline">
+                        <div class="relative pb-2/3">
+                          <img src="{{ product.image.url }}" alt="Image of {{ product.title }}" class="object-cover object-center w-full h-full group-hover:opacity-75">
+                        </div>
+                        <div class="p-4  text-black">
+                            <h3 class="mt-4 text-lg text-gray-700">{{ product.title }}</h3>
+                            <p class="mt-1 text-xs font-medium text-gray-900">₦{{ product.formatted_price }}</p>
+                        </div>
+                    </a>
+                {% empty %}
+                    <p>{% trans "No Product under this Vendor" %}</p>
+                {% endfor %}
+            </div>
+
+            {% if products.has_other_pages %}
+                <div class="flex justify-center mt-8">
+                    <nav class="inline-flex">
+                        {% if products.has_previous %}
+                            <a href="?page=1" class="mr-2 px-4 py-2 items-center bg-gray-200 text-gray-700 rounded-full hover:bg-gray-300 no-underline">
+                                <i class="fas fa-angle-double-left mr-2"></i>First
+                            </a>
+                        {% endif %}
+
+                        {% for num in products.paginator.page_range %}
+                            {% if products.number == num %}
+                                <a href="?page={{ num }}" class="flex items-center justify-center w-8 h-8 bg-teal-500 text-white rounded-full hover:bg-teal-600 no-underline mr-1">{{ num }}</a>
+                            {% elif num > products.number|add:'-3' and num < products.number|add:'3' %}
+                                <a href="?page={{ num }}" class="flex items-center justify-center w-8 h-8 bg-teal-500 text-white rounded-full hover:bg-teal-600 no-underline mr-1">{{ num }}</a>
+                            {% endif %}
+                        {% endfor %}
+
+                        {% if products.has_next %}
+                            <a href="?page={{ products.paginator.num_pages }}" class="mr-2 px-4 py-2 items-center bg-gray-200 text-gray-700 rounded-full hover:bg-gray-300 no-underline">
+                                Last<i class="fas fa-angle-double-right ml-2"></i>
+                            </a>
+                        {% endif %}
+                    </nav>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+{% endblock %}

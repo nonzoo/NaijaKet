@@ -1,0 +1,89 @@
+{% extends 'core/base.html' %}
+{% load i18n %}
+
+{% block title %}{{ category.title }}{% endblock %}
+
+{% block content %}
+  <div class="container mx-auto px-4 py-6"> 
+    <h1 class="text-3xl font-bold">{{ category.title }}</h1>
+
+    <div class="mt-8 flex flex-wrap">
+      <div class="w-full md:w-1/2">
+        <h2 class="text-2xl font-bold">{% trans "Subcategories" %}</h2>
+        <ul class="list-group mt-4">
+          {% for subcategory in subcategories %}
+            <a href="{% url 'subcategory_detail' category.slug subcategory.slug %}" class="no-underline text-gray-700">
+              <li class="list-group-item py-3 bg-gray-200 hover:bg-slate-400">
+                {{ subcategory.title }}
+              </li>
+            </a>
+          {% empty %}
+            <li class="list-group-item py-3">{% trans "No subcategories available in this category" %}.</li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="w-full md:w-1/2 mt-8 md:mt-0">
+        <h2 class="text-2xl font-bold mb-6">{% trans "Products/Services under" %} {{ category.title }}</h2>
+        <div class="grid grid-cols-2 gap-4 mt-4">
+          {% for product in products %}
+            <a href="{% url 'product_detail' product.category.slug product.subcategory.slug product.slug %}" class="group no-underline shadow-sm">
+              <div class="aspect-w-1 aspect-h-1">
+                <div class="w-full h-full overflow-hidden rounded-lg bg-gray-200">
+                  <img src="{{ product.image.url }}" alt="Image of {{ product.title }}" class="object-cover object-center w-full h-full group-hover:opacity-75">
+                </div>
+              </div>
+              
+              <h3 class="mt-4 text-lg text-gray-700">{{ product.title }}</h3>
+              <p class="mt-1 text-xs font-medium text-gray-900">₦{{ product.formatted_price }}</p>
+            </a>
+          {% empty %}
+            <div class="mt-4 text-gray-700">{% trans "No products available in this category" %}.</div>
+          {% endfor %}
+        </div>
+
+  
+       <!-- Pagination -->
+        <div class="mt-8">
+          {% if products.has_other_pages %}
+            <nav class="flex items-center justify-center">
+              <ul class="pagination">
+                {% if products.has_previous %}
+                  <li>
+                    <a href="?page=1" class="flex items-center justify-center no-underline mr-1  w-8 h-8 bg-gray-200 text-gray-700 rounded-full hover:bg-gray-300">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 h-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                      </svg>
+                    </a>
+                  </li>
+                {% endif %}
+
+                {% for num in products.paginator.page_range %}
+                  {% if products.number == num %}
+                    <li>
+                      <a href="?page={{ num }}" class="flex items-center justify-center mr-1 w-8 h-8 bg-teal-500 text-white rounded-full hover:bg-teal-600 no-underline">{{ num }}</a>
+                    </li>
+                  {% elif num > products.number|add:'-3' and num < products.number|add:'3' %}
+                    <li>
+                      <a href="?page={{ num }}" class="flex items-center justify-center mr-1  w-8 h-8 bg-gray-200 text-gray-700 rounded-full hover:bg-gray-300 no-underline">{{ num }}</a>
+                    </li>
+                  {% endif %}
+                {% endfor %}
+ 
+                {% if products.has_next %}
+                  <li>
+                    <a href="?page={{ products.paginator.num_pages }}" class="flex items-center mr-1  justify-center w-8 h-8 bg-gray-200 text-gray-700 rounded-full hover:bg-gray-300 no-underline">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 h-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                      </svg>
+                    </a>
+                  </li>
+                {% endif %}
+              </ul>
+            </nav>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

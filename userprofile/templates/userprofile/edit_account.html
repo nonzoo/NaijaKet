@@ -1,0 +1,81 @@
+{% extends 'core/base.html' %}
+{% load i18n %}
+{% block title %}Edit Account{% endblock %}
+{% block content %}
+    <div class="max-w-7xl mx-auto my-auto min-h-screen">
+        <h1 class="mb-5 text-3xl">{% trans "Edit Account" %}</h1>
+        <div>
+        <form method="post" enctype="multipart/form-data" class="space-y-6">
+            {% csrf_token %}
+
+            {% if form.errors %}
+                <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative mb-4" role="alert">
+                    <strong class="font-bold">{% trans "Form submission failed!" %}</strong>
+                    <ul class="mt-1 mb-0 list-disc">
+                        {% for field in form %}
+                            {% if field.errors %}
+                                {% for error in field.errors %}
+                                    <li>{{ field.label }}: {{ error }}</li>
+                                {% endfor %}
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endif %}
+
+            <div class="flex justify-between items-center">
+                <label for="id_company_image">{% trans "Company Image" %}</label>
+                <label for="id_company_image"><input type="file" name="company_image" class="hidden" id="id_company_image">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
+                        <path
+                            d="M149.1 64.8L138.7 96H64C28.7 96 0 124.7 0 160V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V160c0-35.3-28.7-64-64-64H373.3L362.9 64.8C356.4 45.2 338.1 32 317.4 32H194.6c-20.7 0-39 13.2-45.5 32.8zM256 192a96 96 0 1 1 0 192 96 96 0 1 1 0-192z" />
+                    </svg>
+                    </label>
+                
+
+            </div>
+
+            <div>
+                <label for="id_user">{% trans "Company Name" %}</label>
+                <label for="id_user">( {% trans "To Change this" %}, <a href="mailto:thenaijaket@outlook.com" class="no-underline">{% trans "contact us" %}</a>)</label>
+                <input type="text" value="{{ user.username }}" readonly class="w-full mt-2 py-4 px-6 bg-gray-100 rounded-xl">
+            </div>
+            
+            <div>
+                <label for="id_company_whatsapp_number">{% trans "WhatsApp Number" %}</label>
+                {{ form.company_whatsapp_number }}
+            </div>
+
+            <div>
+                <label for="id_website">{% trans "Company Website(Optional)" %}</label>
+                {{ form.website }}
+            </div>
+
+            <div>
+                <label for="id_state">{% trans "State" %}</label>
+                {{ form.state }}
+            </div>
+
+            <div>
+                <label for="id_lga">{% trans "LGA" %}</label>
+                {{ form.lga }}
+            </div>
+
+            <div>
+                <label for="id_company_address">{% trans "Company Address" %}</label>
+                {{ form.company_address }}
+            </div>
+
+            <div>
+                <label for="id_about">{% trans "About" %}</label>
+                {{ form.about }}
+            </div>
+
+            <div>
+                <button type="submit" class="py-4 px-6 rounded-xl text-white bg-purple-500">{% trans "Save" %}</button>
+            </div>
+        </form>
+        <div><a class="dropdown-item" href="{% url 'password_change'%}">{% trans "Change password" %}</a></div>
+        </div>
+    </div>
+{% endblock %}

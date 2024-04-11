@@ -1,0 +1,117 @@
+{% extends 'core/base.html' %}
+{% load i18n %}
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+{% if user.userprofile.is_vendor %}
+    <h1 class="text-2xl">{{ title }}</h1> 
+
+    <form id="product-form" action="." method="post" enctype="multipart/form-data" class="space-y-5">
+        {% csrf_token %}
+
+        <div>
+            <label for="id_category">{% trans "Category" %}*:</label>
+            {{ form.category }}
+        </div>
+
+        <div>
+            <label for="id_subcategory">{% trans "Subcategory" %}*:</label>
+            <select id="id_subcategory" class="w-full p-4 py-2 px-3 border border-gray-400" name="subcategory">
+                
+            </select>
+        </div>
+
+          <div class="mb-4">
+            <label for="id_title" class="block">{% trans "Title" %}*:</label>
+            {{ form.title }}
+          </div>
+
+          <div class="mb-4">
+            <label for="id_brand" class="block">{% trans "Brand" %}:</label>
+            {{ form.brand }}
+          </div>
+          
+          <div class="mb-4">
+            <label for="id_model" class="block">{% trans "Model(optional)" %}:</label>
+            {{ form.model }}
+          </div>
+
+          <div class="mb-4">
+            <label for="id_description" class="block">{% trans "Description" %}*:</label>
+            {{ form.description }}
+          </div>
+        
+          <div class="mb-4">
+            <label for="id_price" class="block">{% trans "Price" %}*:</label>
+            {{ form.price }}
+          </div>
+        
+          <div class="mb-4">
+            <label for="id_image" class="block">{% trans "Image" %}*:</label>
+            {{ form.image }}
+          </div>
+          <div class="mb-4">
+            <label for="id_image" class="block">{% trans "Image" %}:</label>
+            {{ form.image_2 }}
+          </div>
+          <div class="mb-4">
+            <label for="id_image" class="block">{% trans "Image" %}:</label>
+            {{ form.image_3 }}
+          </div>
+          <div class="mb-4">
+            <label for="id_image" class="block">{% trans "Image" %}:</label>
+            {{ form.image_4 }}
+          </div>
+          <div>
+            <label for="id_condition">{% trans "Condition (optional)" %}:</label>
+            {{ form.condition }}
+        </div>
+        <button class="mt-4 py-2 px-3 rounded-xl bg-teal-500 text-white hover:bg-teal-800">{% trans "Upload" %}</button>
+    </form>
+
+    {% if product %}
+        <a href="{% url 'delete_product' product.id %}" class="mt-4 no-underline inline-block  py-4 px-6 rounded-xl bg-red-500 text-white hover:bg-red-900">{% trans "Delete Product" %}</a>
+    {% endif %}
+
+    
+<script>
+   $(document).ready(function() {
+    $('#id_category').change(function() {
+        var categoryId = $(this).val();
+        var subcategorySelect = $('#id_subcategory');
+
+        // Clear existing subcategory options
+        subcategorySelect.empty();
+
+        // Only make the AJAX request if categoryId is a valid number
+        if (!isNaN(categoryId)) {
+            // Make AJAX request to fetch subcategories
+            $.ajax({
+                url: '/get-subcategories/',
+                data: {
+                    category_id: categoryId
+                },
+                success: function(data) {
+                    // Populate subcategory options
+                    $.each(data.subcategories, function(index, subcategory) {
+                        subcategorySelect.append($('<option></option>').attr('value', subcategory.id).text(subcategory.title));
+                    });
+                },
+                error: function(xhr, status, error) {
+                    // Handle error
+                    console.log(error);
+                }
+            });
+        }
+    });
+
+    // Trigger change event on page load to fetch initial subcategory options
+    $('#id_category').change();
+});
+</script>
+{% else %}
+<h1>{% trans "Please Subscribe" %}</h1>
+<a href="{% url 'my_store' %}" class="no-underline"><i class="fa fa-arrow-left"></i> {% trans "My Store" %}</a>
+{% endif %}
+
+{% endblock %}
