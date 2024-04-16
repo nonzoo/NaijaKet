@@ -7,8 +7,17 @@
 <div class="flex flex-col items-center justify-center">
 <h1 class="text-4xl">{% trans "Search" %}</h1>
 
-
-
+<!-- Search Bar -->
+<div>
+    <form id="searchForm" action="/search/" method="get" class=" items-center ">
+    <div class="search-container">
+      <input type="text" placeholder="  {% trans "Search...Products" %}" id="searchInput" name="query" oninput="getSearchSuggestions(this.value)" class="mt-4 p-2 border-gray-400 border rounded-md">
+        <button><i class="fa fa-search" aria-hidden="true"></i>
+        </button>
+      <div id="searchSuggestions" class="search-suggestions mt-1 space-y-1"></div>
+    </div>
+  </form> 
+  </div>
 
 {% if page_obj %}
 <h2 class="text-2xl md:text-xs text-gray-600">
@@ -62,4 +71,30 @@
   
 {% endif %}
 </div>
+
+<script>
+      function getSearchSuggestions(query) {
+    if (query.length === 0) {
+      document.getElementById("searchSuggestions").innerHTML = ""
+      return;
+    }
+    fetch("/search/suggestions/?query=" + query)
+      .then(response => response.json())
+      .then(data => {
+        let suggestions = data.suggestions.slice(0, 4) //Limit suggestions to 4 only
+        let suggestionsHTML = ""
+        suggestions.forEach(suggestion => {
+          suggestionsHTML += "<div onclick='fillSearchBar(\"" + suggestion + "\")'>" + suggestion + "</div>"
+        });
+        document.getElementById("searchSuggestions").innerHTML = suggestionsHTML
+        
+      });
+  }
+
+  function fillSearchBar(value) {
+    document.getElementById("searchInput").value = value
+    document.getElementById("searchSuggestions").innerHTML = ""
+    document.getElementById("searchForm").submit()
+  }
+</script>
 {% endblock %}

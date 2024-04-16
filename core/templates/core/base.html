@@ -32,12 +32,17 @@
           position: relative;
       }
       
-      #searchSuggestions {
-          position: absolute;
-          width: 180px;
-          background-color: white;
-          border-top: none;
-      }
+/* CSS for positioning search suggestions */
+#searchSuggestions {
+    position: absolute; /* Position search suggestions absolutely */
+    
+    width: 100%; /* Ensure the suggestions span the full width of the container */
+    background-color: white;
+    border: 1px solid #ccc;
+    border-top: none;
+    z-index: 1; /* Ensure the suggestions appear above other content */
+}
+
   
       #searchSuggestions div {
           padding: 5px;
@@ -92,49 +97,6 @@
 <div class="flex flex-col min-h-screen">
 <body class="text-black-50 bg-white no-underline">
   <header>
-
-  <!--First-->
-  <div class="relative search flex h-10 items-center bg-gradient-to-r from-teal-500 to-teal-600 px-2 max-w-8xl mx-auto font-medium text-black sm:px-6 lg:px-8 ">
-    
-    <!--Search Bar-->
-    <div>
-    <form action="/search/" method="get" class=" items-center ">
-    <div class="search-container">
-      <input type="text" placeholder="  {% trans "Search...Products" %}" id="searchInput" name="query" oninput="getSearchSuggestions(this.value)" class="mt-4 p-2 border-gray-400 border rounded-md">
-
-      <div id="searchSuggestions" class="search-suggestions mt-1 space-y-1"></div>
-    </div>
-  </form> 
-  </div>
-  
-  <!--Translation bar-->
-  <!-- <div class="mt-4">
-    {% get_current_language as LANGUAGE_CODE %}
-    <form id="language-form" action="{% url 'set_language' %}" method="post" class="flex items-center bg-transparent space-x-2">
-        {% csrf_token %}
-        <input type="hidden" name="next" value="{{ redirect_to }}" class="hidden">
-        <select name="language" id="language-select" class="border rounded-lg px-2 py-1 bg-white focus:outline-none focus:ring focus:border-blue-300" onchange="submitForm()">
-            {% get_available_languages as LANGUAGES %}
-            {% get_language_info_list for LANGUAGES as languages %}
-            {% for language in languages %}
-            <option class="bg-white text-black" value="{{ language.code }}" {% if language.code == LANGUAGE_CODE %} selected {% endif %}>
-                {{ language.name_local }}
-            </option>
-            {% endfor %}
-        </select>
-    </form>
-
-    <script>
-        function submitForm() {
-            document.getElementById('language-form').submit();
-        }
-    </script>
-</div> -->
-
-</div>
-
-
-<!--Second-->
     <div>
       <nav class="max-w-8xl mx-auto py-5 px-2 md:px-4 flex flex-fill items-center no-underline justify-between bg-gradient-to-r from-teal-500 to-teal-600">
         <div class="menu-left flex items-center space-x-3">
@@ -152,7 +114,8 @@
         
         <div class="menu-right">
           <div class="menu text-white flex items-center space-x-4">
-            
+            <a href="{% url 'search' %}"><i class="fa fa-search text-white" aria-hidden="true"></i>
+            </a>
               {% menu request=request %}
 
               <a href="{% url 'myaccount' %}" class="text-white">
@@ -245,27 +208,7 @@
 
 <!--JavaScript for search suggestion-->
 <script>
-  function getSearchSuggestions(query) {
-    if (query.length === 0) {
-      document.getElementById("searchSuggestions").innerHTML = "";
-      return;
-    }
-    fetch("/search/suggestions/?query=" + query)
-      .then(response => response.json())
-      .then(data => {
-        let suggestions = data.suggestions.slice(0, 4); //Limit suggestions to 4 only
-        let suggestionsHTML = "";
-        suggestions.forEach(suggestion => {
-          suggestionsHTML += "<div onclick='fillSearchBar(\"" + suggestion + "\")'>" + suggestion + "</div>";
-        });
-        document.getElementById("searchSuggestions").innerHTML = suggestionsHTML;
-      });
-  }
 
-  function fillSearchBar(value) {
-    document.getElementById("searchInput").value = value;
-    document.getElementById("searchSuggestions").innerHTML = "";
-  }
 
   function showMore() {
       var moreContent = document.getElementById("moreContent");
