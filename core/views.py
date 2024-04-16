@@ -10,11 +10,15 @@ def frontpage(request):
     
     products = Product.objects.filter(user__userprofile__is_vendor=True, status=Product.ACTIVE)
 
-
+    
     # Shuffle the carousel images
     shuffled_products = list(products)
     shuffle(shuffled_products)
     shuffled_products = shuffled_products[:5]
+
+    products = list(products)
+    shuffle(products)
+
     # Create a Paginator object with the desired number of products per page
     paginator = Paginator(products, 20)  # Display 20 products per page
 
