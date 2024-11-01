@@ -2,9 +2,10 @@ from django.contrib.auth.forms import UserCreationForm
 from django import forms
 from django.contrib.auth.models import User
 from .models import Userprofile
-from .validator import validate_unique_email
+from .validator import validate_unique_email,validate_unique_username
 
 class SignUpForm(UserCreationForm):
+    username = forms.CharField(max_length=50, required=True,validators=[validate_unique_username])
     first_name = forms.CharField(max_length=50, required=True)
     last_name = forms.CharField(max_length=50, required=True)
     email = forms.EmailField(max_length=255, required=True, validators=[validate_unique_email])
