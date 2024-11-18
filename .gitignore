@@ -1,6 +1,7 @@
 
 .env
 venv
+.virenv
 # media/uploads/product_images
 # media/uploads/profile_pic
 *.pyc
