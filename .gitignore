@@ -2,8 +2,8 @@
 .env
 venv
 .virenv
-# media/uploads/product_images
-# media/uploads/profile_pic
+media/uploads/product_images
+media/uploads/profile_pic
 *.pyc
 project/settings.py
 db.sqlite3
