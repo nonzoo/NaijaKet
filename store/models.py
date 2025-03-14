@@ -75,6 +75,7 @@ class Product(models.Model):
     image_2 = models.ImageField(upload_to='uploads/product_images', blank=True, null=True)
     image_3 = models.ImageField(upload_to='uploads/product_images', blank=True, null=True)
     image_4 = models.ImageField(upload_to='uploads/product_images', blank=True, null=True)
+    video = models.FileField(upload_to='uploads/video', blank=True, null=True)
     condition = models.CharField(max_length=50, null=True, blank=True ,choices=(
         ('New','New'),
         ('Used', 'Used')

@@ -34,11 +34,11 @@
     e.preventDefault();
 
     let handler = PaystackPop.setup({
-      key: 'pk_test_8d4da6e41e39e85363069e66d7b3ea0bb6744fef',
+      key: 'pk_live_2ffbe1a2d69ffbdeed2a8e2290717b72af2a0d01',
       email: '{{request.user.email}}', //customer email
       firstname: document.getElementById("first-name").value, // the customer username
       lastname: '{{request.user.username}}',
-      plan : 'PLN_tsh6atfqo17r3yn', // plan code
+      plan : 'PLN_gvcsnw91zpbv9i3', // plan code
       ref: 'NKet-' + Math.floor((Math.random() * 1000000000) + 1), // reference number
       onClose: function () {
         alert('Window closed.');
