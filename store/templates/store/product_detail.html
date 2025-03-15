@@ -114,7 +114,7 @@
 
             <p>
                 <a href="tel:{{ owner_profile.company_whatsapp_number }}" class="block text-center">
-                    <button type="button" class="w-full py-2 px-4 bg-teal-500 text-white rounded-md hover:bg-teal-600">Call to Order</button>
+                    <button onclick="sharePage()" type="button" class="w-full py-2 px-4 bg-teal-500 text-white rounded-md hover:bg-teal-600">Share</button>
                 </a>
             </p>
             <p>
@@ -211,6 +211,19 @@
             });
         }
     });
+    
+    function sharePage() {
+    if (navigator.share) {
+      navigator.share({
+        title: document.title,
+        url: window.location.href
+      })
+      .then(() => console.log('Page shared successfully'))
+      .catch((error) => console.error('Error sharing the page', error));
+    } else {
+      alert("Your browser does not support the Web Share API.");
+    }
+  }
 </script>
 
 {% endblock %}
