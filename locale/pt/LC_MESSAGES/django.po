@@ -251,7 +251,7 @@ msgstr "Estado/Estada"
 
 #: .\userprofile\templates\userprofile\edit_account.html:53
 #: .\userprofile\templates\userprofile\myaccount.html:41
-msgid "LGA"
+msgid "City"
 msgstr "Cidade"
 
 #: .\userprofile\templates\userprofile\edit_account.html:58

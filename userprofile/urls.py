@@ -10,27 +10,27 @@ urlpatterns = [
     path('login/', views.loginView ,name='login'),
     path('logout/', views.logoutUser, name='logout'),
 
-    path('password_change/', auth_views.PasswordChangeView.as_view(template_name='userprofile/password_change_form.html'), name='password_change'),
-    path('password_change_done/', auth_views.PasswordChangeDoneView.as_view(template_name='userprofile/password_change_done.html'), name='password_change_done'),
+    path('passwordchange/', auth_views.PasswordChangeView.as_view(template_name='userprofile/password_change_form.html'), name='password_change'),
+    path('passwordchangedone/', auth_views.PasswordChangeDoneView.as_view(template_name='userprofile/password_change_done.html'), name='password_change_done'),
     
 
-    path('password_reset/', views.password_reset_request, name='password_reset'),
-    path('password_reset/done/', auth_views.PasswordResetDoneView.as_view(template_name='userprofile/password_reset_done.html'), name='password_reset_done'),
-    path('password_reset/confirm/<uidb64>/<token>/', auth_views.PasswordResetConfirmView.as_view(template_name='userprofile/password_reset_confirm.html'), name='password_reset_confirm'),
-    path('password_reset/complete/', auth_views.PasswordResetCompleteView.as_view(template_name='userprofile/password_reset_complete.html'), name='password_reset_complete'),
+    path('passwordreset/', views.password_reset_request, name='password_reset'),
+    path('passwordreset/done/', auth_views.PasswordResetDoneView.as_view(template_name='userprofile/password_reset_done.html'), name='password_reset_done'),
+    path('passwordreset/confirm/<uidb64>/<token>/', auth_views.PasswordResetConfirmView.as_view(template_name='userprofile/password_reset_confirm.html'), name='password_reset_confirm'),
+    path('passwordreset/complete/', auth_views.PasswordResetCompleteView.as_view(template_name='userprofile/password_reset_complete.html'), name='password_reset_complete'),
 
     path('myaccount/', views.myaccount, name='myaccount'),
-    path('edit-account/', views.edit_account, name='edit_account'),
-    path('my-store/', views.my_store, name='my_store'), 
-    path('create-subscription/', views.create_subscription, name='create_subscription'),
-    path('update_vendor_status/', views.update_vendor_status, name='update_vendor_status'),
+    path('editaccount/', views.edit_account, name='edit_account'),
+    path('mystore/', views.my_store, name='my_store'), 
+    path('createsubscription/', views.create_subscription, name='create_subscription'),
+    path('updatevendorstatus/', views.update_vendor_status, name='update_vendor_status'),
 
-    path('my-store/add-product/',views.add_product, name='add_product'),
-    path('my-store/edit-product/<int:pk>/', views.edit_product, name='edit_product'),
+    path('mystore/addproduct/',views.add_product, name='add_product'),
+    path('mystore/editproduct/<int:pk>/', views.edit_product, name='edit_product'),
 
-    path('get-subcategories/', views.get_subcategories, name='get_subcategories'),
+    path('getsubcategories/', views.get_subcategories, name='get_subcategories'),
     
-    path('my-store/delete-product/<int:pk>/',views.delete_product, name='delete_product'),
+    path('mystore/deleteproduct/<int:pk>/',views.delete_product, name='delete_product'),
     path('vendors/<int:pk>/', views.vendor_detail, name='vendor_detail'),
 ]
 
