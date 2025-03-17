@@ -7,7 +7,7 @@ class Command(BaseCommand):
     help = "Deactivate expired vendor subscriptions"
 
     def handle(self, *args, **kwargs):
-        expiration_date = now() - timedelta(minutes=3)
+        expiration_date = now() - timedelta(days=30)
         expired_vendors = Userprofile.objects.filter(is_vendor=True, subscription_date__lte=expiration_date)
 
         for vendor in expired_vendors:
