@@ -30,6 +30,8 @@ class Userprofile(models.Model):
     state = models.ForeignKey(State, max_length=20, null=True, blank=True, on_delete=models.SET_NULL)
     lga = models.CharField(max_length=20, null=True, blank=True)
     is_vendor = models.BooleanField(default=False)
+    subscription_date = models.DateTimeField(null=True, blank=True)  # Track subscription date
+
 
 
     def __str__(self):

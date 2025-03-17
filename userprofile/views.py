@@ -22,6 +22,7 @@ from django.utils.encoding import force_bytes
 from django.core.mail import EmailMultiAlternatives
 from django import template
 from django.contrib.auth import REDIRECT_FIELD_NAME
+from django.utils.timezone import now
 #from django.utils import translation
 
 def vendor_detail(request, pk):
@@ -92,12 +93,14 @@ def create_subscription(request):
         return render(request, 'userprofile/my_store.html')
 
 #to update the is_vendor field in userprofile model when the customer subscribe successfully
-@login_required(login_url='login')
 def update_vendor_status(request):
-    user_profile = Userprofile.objects.get(user=request.user)
-    user_profile.is_vendor = True
-    user_profile.save()
-    return JsonResponse({'message': 'Vendor status updated successfully'})
+    if request.method == "POST":
+        user_profile = Userprofile.objects.get(user=request.user)
+        user_profile.is_vendor = True
+        user_profile.subscription_date = now()
+        user_profile.save()
+        return JsonResponse({"status": "success", "message": "Subscription activated"})
+    return JsonResponse({"status": "error", "message": "Invalid request"}, status=400)
     
 
 
