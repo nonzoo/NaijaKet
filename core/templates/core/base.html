@@ -1,56 +1,57 @@
-{% load menu %}
-{% load static i18n %}
+{% load menu %} {% load static i18n %}
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Discover amazing deals on our e-commerce store. Shop for a wide range of products including cars, buses, and more.">
-  <meta name="keywords" content="e-commerce, online store, best deals, automobile, automotive, cars, buses, naijaket">
-  
-  {% block meta %}
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover amazing deals on our e-commerce store. Shop for a wide range of products including cars, buses, and more."
+    />
+    <meta
+      name="keywords"
+      content="e-commerce, online store, best deals, automobile, automotive, cars, buses, naijaket"
+    />
 
-  {% endblock %}
-  <link rel="shortcut icon" type="image" href="/media/uploads/logo.png">
+    {% block meta %} {% endblock %}
+    <link rel="shortcut icon" type="image" href="/media/uploads/logo.png" />
 
-  <!--My Tailwind css file directory-->
-  
-  <link rel="stylesheet" href="/static/build/output.css">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!--My Bootstrap Css and Js file directory-->
-  <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css" >
-  <script src="/static/bootstrap/js/bootstrap.bundle.min.js"></script>
-  
-  <script src="/static/JQuery/jquery.js"></script>
-  <link rel="stylesheet" href="/static/fontawesome/css/all.min.css">
-  <link rel="stylesheet" href="/static/fontawesome/css/fontawesome.min.css">
-  
-  <style>
+    <!--My Tailwind css file directory-->
+
+    <link rel="stylesheet" href="/static/build/output.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--My Bootstrap Css and Js file directory-->
+    <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css" />
+    <script src="/static/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="/static/JQuery/jquery.js"></script>
+    <link rel="stylesheet" href="/static/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="/static/fontawesome/css/fontawesome.min.css" />
+
+    <style>
       .search-container {
-          position: relative;
+        position: relative;
       }
-      
-/* CSS for positioning search suggestions */
-#searchSuggestions {
-    position: absolute; /* Position search suggestions absolutely */
-    
-    width: 100%; /* Ensure the suggestions span the full width of the container */
-    background-color: white;
-    border: 1px solid #ccc;
-    border-top: none;
-    z-index: 1; /* Ensure the suggestions appear above other content */
-}
 
-  
-      #searchSuggestions div {
-          padding: 5px;
-          cursor: pointer;
+      /* CSS for positioning search suggestions */
+      #searchSuggestions {
+        position: absolute; /* Position search suggestions absolutely */
+
+        width: 100%; /* Ensure the suggestions span the full width of the container */
+        background-color: white;
+        border: 1px solid #ccc;
+        border-top: none;
+        z-index: 1; /* Ensure the suggestions appear above other content */
       }
-  
+
+      #searchSuggestions div {
+        padding: 5px;
+        cursor: pointer;
+      }
+
       #searchSuggestions div:hover {
-          background-color: lightgray;
+        background-color: lightgray;
       }
 
       footer ul {
@@ -68,171 +69,220 @@
           margin-right: 4rem;
         }
       }
-  /* Initially hide the additional content */
-  #moreContent {
-    display: none;
-  }
-  #moreContent2{
-    display: none;
-  }
-  </style>
+      /* Initially hide the additional content */
+      #moreContent {
+        display: none;
+      }
+      #moreContent2 {
+        display: none;
+      }
+    </style>
 
-  <style>
-  html, body {
-    height: 100%;
-  }
-</style>
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+    </style>
 
-<title>
-    {% block title %}
+    <title>{% block title %} {% endblock %} | NaijaKet</title>
+  </head>
 
-    {% endblock %} | NaijaKet
-</title>
+  <!--BODY OF THE BASE-->
 
-</head>
+  <div class="flex flex-col min-h-screen">
+    <body class="text-black-50 bg-white no-underline">
+      <header>
+        <div class="bg-gradient-to-r from-teal-500 to-teal-600">
+          <marquee class="text-white"
+            >contact us on +2348136863259 &nbsp; &nbsp; Donate/Support
+            us:0070954747 Access Bank-Gerald Igwe &nbsp;&nbsp; 2025</marquee
+          >
+          <nav
+            class="max-w-8xl mx-auto py-5 px-2 md:px-4 flex flex-fill items-center no-underline justify-between"
+          >
+            <div class="menu-left flex items-center space-x-3">
+              <div class="logo">
+                <a
+                  href="{% url 'frontpage' %}"
+                  class="text-white text-2xl text-decoration-none flex items-center"
+                >
+                  <span class="mr-2">
+                    <span class="font-semibold bg-clip-text">NaijaKet</span>
+                  </span>
+                  <img
+                    src="/media/uploads/logo.png"
+                    alt="logo"
+                    class="items-center w-20 sm:w-12 h-auto"
+                  />
+                </a>
+              </div>
+            </div>
 
+            <div class="menu-right">
+              <div class="menu text-white flex items-center space-x-4">
+                <a href="{% url 'search' %}"
+                  ><i class="fa fa-search text-white" aria-hidden="true"></i>
+                </a>
+                {% menu request=request %}
 
-<!--BODY OF THE BASE-->
-
-<div class="flex flex-col min-h-screen">
-<body class="text-black-50 bg-white no-underline">
-  <header>
-    <div class=" bg-gradient-to-r from-teal-500 to-teal-600">
-      <marquee class="text-white">contact us on +2348136863259 &nbsp; &nbsp; Donate/Support us:0070954747 Access Bank-Gerald Igwe &nbsp;&nbsp; 2025</marquee>
-      <nav class="max-w-8xl mx-auto py-5 px-2 md:px-4 flex flex-fill items-center no-underline justify-between">
-        <div class="menu-left flex items-center space-x-3">
-          <div class="logo">
-            <a href="{% url 'frontpage' %}" class="text-white text-2xl text-decoration-none flex items-center">
-              <span class="mr-2">
-                <span class=" font-semibold  bg-clip-text">NaijaKet</span>
-              </span>
-              <img src="/media/uploads/logo.png" alt="logo" class="items-center w-20 sm:w-12 h-auto">
-            </a>  
-          </div>
-        </div>
-        
-        
-        
-        <div class="menu-right">
-          <div class="menu text-white flex items-center space-x-4">
-            <a href="{% url 'search' %}"><i class="fa fa-search text-white" aria-hidden="true"></i>
-            </a>
-              {% menu request=request %}
-
-              <a href="{% url 'myaccount' %}" class="text-white">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6" aria-placeholder="My Account">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
-              </a>
-              {% if request.user.is_authenticated %}
-                <a href="{% url 'my_store' %}" class="text-white">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 21v-7.5a.75.75 0 01.75-.75h3a.75.75 0 01.75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349m-16.5 11.65V9.35m0 0a3.001 3.001 0 003.75-.615A2.993 2.993 0 009.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 002.25 1.016c.896 0 1.7-.393 2.25-1.016a3.001 3.001 0 003.75.614m-16.5 0a3.004 3.004 0 01-.621-4.72L4.318 3.44A1.5 1.5 0 015.378 3h13.243a1.5 1.5 0 011.06.44l1.19 1.189a3 3 0 01-.621 4.72m-13.5 8.65h3.75a.75.75 0 00.75-.75V13.5a.75.75 0 00-.75-.75H6.75a.75.75 0 00-.75.75v3.75c0 .415.336.75.75.75z" />
+                <a href="{% url 'myaccount' %}" class="text-white">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                    aria-placeholder="My Account"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
                   </svg>
                 </a>
-              {% endif %}
+                {% if request.user.is_authenticated %}
+                <a href="{% url 'my_store' %}" class="text-white">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M13.5 21v-7.5a.75.75 0 01.75-.75h3a.75.75 0 01.75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349m-16.5 11.65V9.35m0 0a3.001 3.001 0 003.75-.615A2.993 2.993 0 009.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 002.25 1.016c.896 0 1.7-.393 2.25-1.016a3.001 3.001 0 003.75.614m-16.5 0a3.004 3.004 0 01-.621-4.72L4.318 3.44A1.5 1.5 0 015.378 3h13.243a1.5 1.5 0 011.06.44l1.19 1.189a3 3 0 01-.621 4.72m-13.5 8.65h3.75a.75.75 0 00.75-.75V13.5a.75.75 0 00-.75-.75H6.75a.75.75 0 00-.75.75v3.75c0 .415.336.75.75.75z"
+                    />
+                  </svg>
+                </a>
+                {% endif %}
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <div class="max-w-9xl text-black no-underline py-2 px-3 font-serif">
+        {% if messages %} {% for message in messages %}
+        <div class="mt-4 px-8 py-4 mb-4 bg-teal-200 text-teal-800 rounded-md">
+          {{message}}
+        </div>
+        {% endfor %} {% endif %} {% block content %} {% endblock content %}
+      </div>
+    </body>
+
+    <footer class="bg-gradient-to-r from-teal-800 to-gray-600 text-white">
+      <div
+        class="max-w-6xl mx-auto py-10 px-6 xl:px-0 md:flex md:justify-between"
+      >
+        <div class="footer-left mb-12 md:mb-0 md:w-1/2">
+          <ul>
+            <li class="mb-4">
+              <p class="uppercase">
+                <strong>ABOUT NAIJAKET :</strong>
+                 -SOFTWARE TECHNOLOGY_E-BOOKS _ECOMMERCE _
+                WEBSITE DEVELOPMENT AND SALES OF ONLINE STORES FOR ALL KIND OF
+                BUSINESSES: AUTOMOBILE, REAL ESTATE, CLOTHING BRAND, BUILDING
+                MATERIALS, HOTELS ____ INCLUDING PERSONAL WEBSITE FOR SINGERS,
+                ARTISTS, BLOGGERS, COMEDIANS, CONTENT CREATORS....E.T.C
+              </p>
+              <!-- <button onclick="showMore()" class="text-blue-500">
+                Show More
+              </button> -->
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-right md:w-1/2 md:text-right">
+          <div class="mb-6">
+            <h2 class="mb-3 uppercase text-2xl font-serif">
+              {% trans "Social links" %}
+            </h2>
+            <ul>
+              <li>
+                <a href="#" class="text-white hover:text-teal-300 no-underline"
+                  ><i class="fab fa-facebook"></i> Facebook</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white hover:text-teal-300 no-underline"
+                  ><i class="fab fa-twitter"></i> Twitter</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white hover:text-teal-300 no-underline"
+                  ><i class="fab fa-instagram"></i> Instagram</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://wa.me/+2348136863259"
+                  class="text-white hover:text-teal-300 no-underline"
+                  ><i class="fab fa-whatsapp"></i> WhatsApp</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="mb-3 uppercase text-2xl font-serif">
+              {% trans "Contact Us" %}
+            </h2>
+            <ul>
+              <li>
+                <i class="fa fa-phone text-xl text-white"></i
+                ><a
+                  href="tel:+244953326458"
+                  class="text-xl text-white no-underline ml-2"
+                  >+2348136863259</a
+                >
+              </li>
+              <li>
+                <i class="fa fa-envelope text-xl text-white"></i
+                ><a
+                  href="mailto:thenaijaket.outlook.com"
+                  class="text-xl text-white no-underline ml-2"
+                  >thenaijaket@outlook.com</a
+                >
+              </li>
+            </ul>
           </div>
         </div>
-      </nav>
-    </div>
-  </header>
-  
-
-  
-  <div class="max-w-9xl  text-black no-underline py-2 px-3 font-serif">
-
-    {% if messages %}
-    {% for message in messages %}
-        <div class="mt-4 px-8 py-4 mb-4 bg-teal-200 text-teal-800 rounded-md">{{message}}</div>
-    {% endfor %}
-    {% endif %}   
-
-    {% block content %}
-
-    {% endblock content %}
-  </div>
-</body>
-
-<footer class="bg-gradient-to-r from-teal-800 to-gray-600 text-white">
-  <div class="max-w-6xl mx-auto py-10 px-6 xl:px-0 md:flex md:justify-between">
-    <div class="footer-left mb-12 md:mb-0 md:w-1/2">
-      <ul>
-        <li class="mb-4">
-          <p class="text-2xl font-sans mb-1">{% trans "About Us" %}</p>
-          <p class="uppercase"><strong>NAIJAKET</strong>
-            
-              {% blocktrans %}
-              stands as the premier business-to-business (B2B) platform in Nigeria, uniting registered automotive and retail entities in a dynamic digital ecosystem. This platform transcends traditional industry boundaries, fostering collaborative relationships among companies, firms, and businesses. By offering innovative tools and tailored solutions,{% endblocktrans %}<span id="moreContent">{% blocktrans %}NaijaKet empowers its members to navigate the intricacies of the automotive and retail sectors, ensuring operational efficiency, growth, and, above all, customer satisfaction. With a commitment to redefining the future of business in Nigeria, NaijaKet is more than just a transactional space; it's a thriving community where businesses converge to innovate and collectively succeed in an ever-evolving market.{% endblocktrans %}
-              
-            </span>
-          </p><button onclick="showMore()" class="text-blue-500">Show More</button>
-        </li>
-        <li class="mb-4">
-          <p class="text-2xl font-sans mb-1">{% trans "Mission/Purpose" %}</p>
-          <p class="uppercase">{% blocktrans %}Our mission is to facilitate transactions and ensure customer 
-            satisfaction by providing an easy, secure, and transparent platform. 
-            We are dedicated to simplifying the process of conducting business
-             while maintaining a high level of trust and integrity.{% endblocktrans %}</p>
-        </li>
-        <li class="mb-4">
-          <p class="text-2xl font-sans mb-1">{% trans "Vision" %}</p>
-          <p class="uppercase">{% blocktrans %}In our unwavering commitment to excellence, NaijaKet is dedicated to delivering an extensive network of registered companies specializing in retail and automotive products and services. We prioritize providing a seamless, fast, and secure transaction experience, perfectly aligned with the burgeoning landscape of technological advancements.{% endblocktrans %}<span id="moreContent2">
-          {% blocktrans %}Our dynamic platform serves as a digital marketplace where businesses converge, fostering connections and transactions that transcend geographical boundaries. As a cornerstone of innovation, we leverage cutting-edge technology to ensure not only the efficiency of transactions but also the utmost satisfaction of our users. In this era of rapid technological growth, NaijaKet stands as a beacon, ushering in a new era of business interactions where convenience, security, and satisfaction converge harmoniously, shaping the future of commerce in Nigeria and beyond.{% endblocktrans %}</span></p>
-          <button onclick="showMore2()" class="text-blue-500">Show More</button>
-        </li>
-      </ul>
-    </div>
-    
-    <div class="footer-right md:w-1/2 md:text-right">
-      <div class="mb-6">
-        <h2 class="mb-3 uppercase text-2xl font-serif">{% trans "Social links" %}</h2>
-        <ul>
-          <li><a href="#" class="text-white hover:text-teal-300 no-underline"><i class="fab fa-facebook"></i> Facebook</a></li>
-          <li><a href="#" class="text-white hover:text-teal-300 no-underline"><i class="fab fa-twitter"></i> Twitter</a></li>
-          <li><a href="#" class="text-white hover:text-teal-300 no-underline"><i class="fab fa-instagram"></i> Instagram</a></li>
-          <li><a href="https://wa.me/+2348136863259" class="text-white hover:text-teal-300 no-underline"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
-
-        </ul>
       </div>
-      <div>
-        <h2 class="mb-3 uppercase text-2xl font-serif">{% trans "Contact Us" %}</h2>
-        <ul>
-          <li><i class="fa fa-phone text-xl text-white"></i><a href="tel:+244953326458" class="text-xl text-white no-underline ml-2">+2348136863259</a></li>
-          <li><i class="fa fa-envelope  text-xl text-white"></i><a href="mailto:thenaijaket.outlook.com" class="text-xl text-white no-underline ml-2">thenaijaket@outlook.com</a></li>
-        </ul>
-      </div>
-    </div>
+    </footer>
   </div>
-</footer>
 
-
-
-</div>
-
-<!--JavaScript for search suggestion-->
-<script>
-
-
-  function showMore() {
+  <!--JavaScript for search suggestion-->
+  <!-- <script>
+    function showMore() {
       var moreContent = document.getElementById("moreContent");
 
       // Toggle the visibility of the additional content
-      if (moreContent.style.display === "none" || moreContent.style.display === "") {
+      if (
+        moreContent.style.display === "none" ||
+        moreContent.style.display === ""
+      ) {
         moreContent.style.display = "inline";
       } else {
         moreContent.style.display = "none";
       }
     }
 
-    function showMore2(){
+    function showMore2() {
       var moreContent2 = document.getElementById("moreContent2");
 
-      if (moreContent2.style.display ==="none" || moreContent2.style.display === ""){
-        moreContent2.style.display = 'inline';
+      if (
+        moreContent2.style.display === "none" ||
+        moreContent2.style.display === ""
+      ) {
+        moreContent2.style.display = "inline";
       } else {
         moreContent2.style.display = "none";
       }
     }
-</script>
-
+  </script> -->
 </html>
