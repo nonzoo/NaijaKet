@@ -2,7 +2,7 @@ from django.shortcuts import render, get_object_or_404, redirect
 from django.db.models import Q
 from .cart import Cart
 from django.contrib.auth.decorators import login_required
-from .models import Product, Category, Subcategory
+from .models import Product, Category, Subcategory, Comment
 import json
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.conf import settings
@@ -111,6 +111,7 @@ def product_detail(request, category_slug, subcategory_slug, slug):
     subcategory = get_object_or_404(Subcategory, slug=subcategory_slug, category=category)
     product = get_object_or_404(Product, slug=slug, user__userprofile__is_vendor=True, status=Product.ACTIVE)
 
+
     owner_profile = product.user.userprofile  # Retrieve the UserProfile instance
 
     return render(request, 'store/product_detail.html', {
@@ -122,10 +123,45 @@ def product_detail(request, category_slug, subcategory_slug, slug):
         'protocol': request.scheme,  
         
     })
+
+@login_required
+def toggle_like(request, category_slug, subcategory_slug, slug):
+    product = get_object_or_404(
+        Product,
+        slug=slug,
+        category__slug=category_slug,
+        subcategory__slug=subcategory_slug
+    )
+
+    if request.user in product.likes.all():
+        product.likes.remove(request.user)
+    else:
+        product.likes.add(request.user)
+
+    return redirect(request.META.get("HTTP_REFERER", "product_detail"))
  
     
 
+@login_required
+def add_comment(request, category_slug, subcategory_slug, slug):
+    product = get_object_or_404(
+        Product,
+        slug=slug,
+        category__slug=category_slug,
+        subcategory__slug=subcategory_slug
+    )
 
+    if request.method == "POST" and product.comments_enabled:
+        text = request.POST.get("comment")
+
+        if text:
+            Comment.objects.create(
+                product=product,
+                user=request.user,
+                text=text
+            )
+
+    return redirect(request.META.get('HTTP_REFERER', '/'))
 
 
 '''def add_to_cart(request,product_id):

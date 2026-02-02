@@ -15,7 +15,7 @@ from .models import Product
 class ProductForm(forms.ModelForm):
     class Meta:
         model = Product
-        fields = ('category' ,'subcategory', 'title', 'description', 'brand','model','price', 'image','image_2','image_3','image_4','video','condition')
+        fields = ('category' ,'subcategory', 'title', 'description', 'brand','model','price', 'image','image_2','image_3','image_4','video','condition', 'comments_enabled',)
         widgets = {
             'category': forms.Select(attrs={
                 'class': 'w-full p-4 py-2 px-3 border border-gray-400'
@@ -55,6 +55,9 @@ class ProductForm(forms.ModelForm):
                 'class':'w-full p-4 py-2 px-3 border border-gray-400'
             }),
              'condition': forms.Select(attrs={
+                'class': 'w-full p-4 py-2 px-3 border border-gray-400'
+            }),
+            'comments_enabled': forms.CheckboxInput(attrs={
                 'class': 'w-full p-4 py-2 px-3 border border-gray-400'
             }),
         }

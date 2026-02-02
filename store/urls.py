@@ -8,6 +8,9 @@ urlpatterns = [
     path('<slug:slug>/', views.category_detail, name='category_detail'),
     path('<slug:category_slug>/<slug:subcategory_slug>/', views.subcategory_detail, name='subcategory_detail'),
     path('<str:category_slug>/<str:subcategory_slug>/<str:slug>/', views.product_detail, name='product_detail'),
+    path('<str:category_slug>/<str:subcategory_slug>/<str:slug>/like/', views.toggle_like, name='toggle_like'),
+    path('<str:category_slug>/<str:subcategory_slug>/<str:slug>/comment/', views.add_comment, name='add_comment'),
+
 
 ]
 #path('cart/success/', views.success, name='success'),

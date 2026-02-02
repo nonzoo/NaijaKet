@@ -9,21 +9,6 @@ from django.contrib.humanize.templatetags.humanize import intcomma
 from django.db import models
 
 
-# class Gender(models.Model):
-#     title = models.CharField(max_length=25)
-#     slug = models.SlugField(max_length=50)
-
-#     def __str__(self):
-#         return self.title
-    
-
-# class State(models.Model):
-#     title = models.CharField(max_length=25)
-#     slug = models.SlugField(max_length=50)
-#     gender = models.ForeignKey(Gender, related_name = 'genderr',on_delete = models.CASCADE)
-
-#     def __str__(self):
-#         return self.title
 
 
 class Category(models.Model):
@@ -83,6 +68,9 @@ class Product(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     status = models.CharField(max_length=50, choices=STATUS_CHOICES, default=ACTIVE)
+    likes = models.ManyToManyField(User, related_name='liked_products', blank=True)
+    comments_enabled = models.BooleanField(default=True)
+
 
     class Meta:
         ordering = ('-created_at',)
@@ -105,7 +93,16 @@ class Product(models.Model):
         super(Product, self).save(*args, **kwargs)
 
 
-    #to automatically generate a thumbnail based on the image 
+class Comment(models.Model):
+    product = models.ForeignKey(Product, related_name='comments', on_delete=models.CASCADE)
+    user = models.ForeignKey(User,on_delete=models.CASCADE)
+    text = models.TextField()
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"{self.user} - {self.product.title}"
+    class Meta:
+        ordering = ['-created_at']
 
 
 

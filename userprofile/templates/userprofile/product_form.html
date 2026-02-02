@@ -70,6 +70,10 @@
             <label for="id_condition">{% trans "Condition (optional)" %}:</label>
             {{ form.condition }}
         </div>
+        <div>
+            <label for="id_comments_enabled">{% trans "Enable Comments" %}:</label>
+            {{ form.comments_enabled }}
+        </div>
         <button class="mt-4 py-2 px-3 rounded-xl bg-teal-500 text-white hover:bg-teal-800">{% trans "Upload" %}</button>
     </form>
 
