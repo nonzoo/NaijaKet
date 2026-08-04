@@ -1,5 +1,6 @@
 from pathlib import Path
 import os
+import dj_database_url
 from dotenv import load_dotenv
 from django.utils.translation import gettext_lazy as _
 
@@ -13,12 +14,30 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv('SECRET_KEY')
+SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-local-dev-only-set-SECRET_KEY-in-production')
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.getenv('DEBUG', 'True').lower() == 'true'
 
-ALLOWED_HOSTS = ["*"]
-# ALLOWED_HOSTS = ["localhost", "127.0.0.1" , "naijaket.com", 'www.naijaket.com']
+# Hosts come from the environment. Railway injects RAILWAY_PUBLIC_DOMAIN itself,
+# so the deployed domain is trusted without hardcoding it here.
+ALLOWED_HOSTS = [h.strip() for h in os.getenv('ALLOWED_HOSTS', 'localhost,127.0.0.1').split(',') if h.strip()]
+
+RAILWAY_PUBLIC_DOMAIN = os.getenv('RAILWAY_PUBLIC_DOMAIN')
+if RAILWAY_PUBLIC_DOMAIN and RAILWAY_PUBLIC_DOMAIN not in ALLOWED_HOSTS:
+    ALLOWED_HOSTS.append(RAILWAY_PUBLIC_DOMAIN)
+
+# Django 4+ rejects every POST over HTTPS unless the origin is trusted.
+CSRF_TRUSTED_ORIGINS = [
+    f'https://{host}' for host in ALLOWED_HOSTS
+    if host not in ('localhost', '127.0.0.1') and not host.startswith('*')
+]
+
+if not DEBUG:
+    # Railway terminates TLS at its proxy, so Django needs the forwarded header
+    # to know the original request was HTTPS.
+    SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+    SESSION_COOKIE_SECURE = True
+    CSRF_COOKIE_SECURE = True
 
 LOGIN_URL = 'login'
 LOGIN_REDIRECT_URL = 'myaccount'
@@ -56,6 +75,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -92,6 +112,9 @@ WSGI_APPLICATION = 'project.wsgi.application'
 
 
 
+# SQLite locally; Railway's Postgres add-on injects DATABASE_URL and takes over.
+# Note: the container filesystem is wiped on every deploy, so SQLite is NOT
+# viable in production -- DATABASE_URL must be set there.
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -99,17 +122,8 @@ DATABASES = {
     }
 }
 
-# for PostgreSQL or MySQL
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': os.getenv('DATABASE_NAME'),
-#         'USER': os.getenv('DATABASE_USER'),
-#         'PASSWORD': os.getenv('DATABASE_PASSWORD'),
-#         'HOST': os.getenv('DATABASE_HOST'),
-#         'PORT': os.getenv('DATABASE_PORT'),
-#     }
-# }
+if os.getenv('DATABASE_URL'):
+    DATABASES['default'] = dj_database_url.config(conn_max_age=600)
 
 
 
@@ -172,6 +186,17 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [BASE_DIR / "static/"]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles/')
 
+# Whitenoise serves collected static files directly from gunicorn, so no
+# separate web server or CDN is needed for CSS/JS.
+STORAGES = {
+    "default": {
+        "BACKEND": "django.core.files.storage.FileSystemStorage",
+    },
+    "staticfiles": {
+        "BACKEND": "whitenoise.storage.CompressedStaticFilesStorage",
+    },
+}
+
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
@@ -185,9 +210,11 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = "smtp-mail.outlook.com"# Replace with your SMTP server
-EMAIL_PORT = os.getenv('PORT')  # Replace with the appropriate port number
-EMAIL_HOST_USER = "thenaijaket@outlook.com"  # Your Outlook email address
-EMAIL_HOST_PASSWORD = os.getenv('PASSWORD')  # Your Outlook email password
+EMAIL_HOST = os.getenv('EMAIL_HOST', "smtp-mail.outlook.com")
+# NOTE: must NOT read PORT -- Railway sets that to the web server's port (e.g. 8080),
+# which would silently point SMTP at the wrong port in production.
+EMAIL_PORT = int(os.getenv('EMAIL_PORT', '587'))
+EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER', "thenaijaket@outlook.com")
+EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD') or os.getenv('PASSWORD')
 EMAIL_USE_TLS = True  # Use TLS encryption for secure connection
 DEFAULT_FROM_EMAIL = 'NaijaKet <thenaijaket@outlook.com>'

@@ -1,0 +1,5 @@
+# Force a Python-only build. package.json exists for Tailwind/Swiper, but
+# static/build/output.css is committed, so Node is not needed at deploy time.
+# Without this, Nixpacks detects both providers and runs an npm install that
+# adds build time and can fail the deploy.
+providers = ["python"]
