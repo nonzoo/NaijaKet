@@ -67,7 +67,12 @@ INSTALLED_APPS = [
     'store',
     # 3rd Party
     'crispy_forms',
-    'crispy_bootstrap5', 
+    'crispy_bootstrap5',
+    # Media storage. Deliberately listed AFTER django.contrib.staticfiles:
+    # listing it before would override the collectstatic command, and static
+    # files are handled by whitenoise, not Cloudinary.
+    'cloudinary_storage',
+    'cloudinary',
     
     
     
@@ -196,6 +201,17 @@ STORAGES = {
         "BACKEND": "whitenoise.storage.CompressedStaticFilesStorage",
     },
 }
+
+# User uploads go to Cloudinary whenever CLOUDINARY_URL is present, so the
+# container's ephemeral disk never holds anything that needs to survive a
+# redeploy. Without the variable (local dev), uploads stay on the filesystem.
+# The cloudinary library reads CLOUDINARY_URL itself; no extra config needed.
+CLOUDINARY_URL = os.getenv('CLOUDINARY_URL')
+
+if CLOUDINARY_URL:
+    STORAGES["default"] = {
+        "BACKEND": "cloudinary_storage.storage.MediaCloudinaryStorage",
+    }
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')

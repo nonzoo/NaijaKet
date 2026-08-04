@@ -1,12 +1,26 @@
+import os
 from django.db import models
 from django.contrib.auth.models import User
 from django.core.files import File
+from django.core.files.storage import default_storage
 from PIL import Image
 from io import BytesIO
 from django.utils.text import slugify
 from random import randint
 from django.contrib.humanize.templatetags.humanize import intcomma
 from django.db import models
+
+
+def video_storage():
+    """Video needs its own backend: Cloudinary files video under a separate
+    resource type, and the default image storage would reject or mangle it.
+    Passing a callable (rather than an instance) keeps the migration stable --
+    Django records the function reference, so the same migration works whether
+    or not CLOUDINARY_URL is set in a given environment."""
+    if os.getenv('CLOUDINARY_URL'):
+        from cloudinary_storage.storage import VideoMediaCloudinaryStorage
+        return VideoMediaCloudinaryStorage()
+    return default_storage
 
 
 
@@ -60,7 +74,7 @@ class Product(models.Model):
     image_2 = models.ImageField(upload_to='uploads/product_images', blank=True, null=True)
     image_3 = models.ImageField(upload_to='uploads/product_images', blank=True, null=True)
     image_4 = models.ImageField(upload_to='uploads/product_images', blank=True, null=True)
-    video = models.FileField(upload_to='uploads/video', blank=True, null=True)
+    video = models.FileField(upload_to='uploads/video', blank=True, null=True, storage=video_storage)
     condition = models.CharField(max_length=50, null=True, blank=True ,choices=(
         ('New','New'),
         ('Used', 'Used')
