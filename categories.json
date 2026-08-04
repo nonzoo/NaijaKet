@@ -1,0 +1,983 @@
+[
+{
+  "model": "store.category",
+  "pk": 37,
+  "fields": {
+    "title": "Luxury Car Market",
+    "slug": "luxury_car_market"
+  }
+},
+{
+  "model": "store.category",
+  "pk": 38,
+  "fields": {
+    "title": "Lagos Car Market",
+    "slug": "lagos_car_market"
+  }
+},
+{
+  "model": "store.category",
+  "pk": 39,
+  "fields": {
+    "title": "Truck, Buses & Machineries",
+    "slug": "truck_buses_machineries"
+  }
+},
+{
+  "model": "store.category",
+  "pk": 40,
+  "fields": {
+    "title": "Website Development Companies",
+    "slug": "website_development_companies"
+  }
+},
+{
+  "model": "store.category",
+  "pk": 41,
+  "fields": {
+    "title": "3D Logo & Graphic Design Companies",
+    "slug": "3d_logo_graphic_design_companies"
+  }
+},
+{
+  "model": "store.category",
+  "pk": 42,
+  "fields": {
+    "title": "Trade Crypto & Gift Cards Here",
+    "slug": "trade_crypto_gift_cards_here"
+  }
+},
+{
+  "model": "store.category",
+  "pk": 43,
+  "fields": {
+    "title": "Facebook Page Promotion & Internet Services",
+    "slug": "facebook_page_promotion_internet_services"
+  }
+},
+{
+  "model": "store.category",
+  "pk": 44,
+  "fields": {
+    "title": "Lagos Furniture, Electronics & Gadgets Market",
+    "slug": "lagos_furniture_electronics_gadgets_market"
+  }
+},
+{
+  "model": "store.category",
+  "pk": 45,
+  "fields": {
+    "title": "Contact Naijaket Here",
+    "slug": "contact_naijaket_here"
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 404,
+  "fields": {
+    "title": "Tesla Car Market",
+    "slug": "tesla_car_market",
+    "category": 37
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 405,
+  "fields": {
+    "title": "Sport Cars",
+    "slug": "sport_cars",
+    "category": 37
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 406,
+  "fields": {
+    "title": "Rolls Royce Cars",
+    "slug": "rolls_royce_cars",
+    "category": 37
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 407,
+  "fields": {
+    "title": "Porche Cars",
+    "slug": "porche_cars",
+    "category": 37
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 408,
+  "fields": {
+    "title": "Bentley Cars",
+    "slug": "bentley_cars",
+    "category": 37
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 409,
+  "fields": {
+    "title": "Mercedes Cars",
+    "slug": "mercedes_cars",
+    "category": 37
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 410,
+  "fields": {
+    "title": "Innoson Cars",
+    "slug": "innoson_cars",
+    "category": 37
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 411,
+  "fields": {
+    "title": "Lamborghini Car",
+    "slug": "lamborghini_car",
+    "category": 37
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 412,
+  "fields": {
+    "title": "Maybach Cars",
+    "slug": "maybach_cars",
+    "category": 37
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 413,
+  "fields": {
+    "title": "Bmw Cars",
+    "slug": "bmw_cars",
+    "category": 37
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 414,
+  "fields": {
+    "title": "Audi Cars",
+    "slug": "audi_cars",
+    "category": 37
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 415,
+  "fields": {
+    "title": "Dodge Cars",
+    "slug": "dodge_cars",
+    "category": 37
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 416,
+  "fields": {
+    "title": "Volvo",
+    "slug": "volvo",
+    "category": 37
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 417,
+  "fields": {
+    "title": "Jaguar Cars",
+    "slug": "jaguar_cars",
+    "category": 37
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 418,
+  "fields": {
+    "title": "Land Rover Cars",
+    "slug": "land_rover_cars",
+    "category": 37
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 419,
+  "fields": {
+    "title": "Lexus Cars",
+    "slug": "lexus_cars",
+    "category": 37
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 420,
+  "fields": {
+    "title": "Ferrari Cars",
+    "slug": "ferrari_cars",
+    "category": 37
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 421,
+  "fields": {
+    "title": "Bentley Cars",
+    "slug": "bentley_cars",
+    "category": 37
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 422,
+  "fields": {
+    "title": "Bugatti Cars",
+    "slug": "bugatti_cars",
+    "category": 37
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 423,
+  "fields": {
+    "title": "Aston Martin",
+    "slug": "aston_martin",
+    "category": 37
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 424,
+  "fields": {
+    "title": "Mclaren Cars",
+    "slug": "mclaren_cars",
+    "category": 37
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 425,
+  "fields": {
+    "title": "Lincoln Cars",
+    "slug": "lincoln_cars",
+    "category": 37
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 426,
+  "fields": {
+    "title": "Maserati Car",
+    "slug": "maserati_car",
+    "category": 37
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 427,
+  "fields": {
+    "title": "Genesis Cars",
+    "slug": "genesis_cars",
+    "category": 37
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 428,
+  "fields": {
+    "title": "Toyota Car Market",
+    "slug": "toyota_car_market",
+    "category": 38
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 429,
+  "fields": {
+    "title": "Mercedes Car Market",
+    "slug": "mercedes_car_market",
+    "category": 38
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 430,
+  "fields": {
+    "title": "Acura Car Market",
+    "slug": "acura_car_market",
+    "category": 38
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 431,
+  "fields": {
+    "title": "Audi Car Market",
+    "slug": "audi_car_market",
+    "category": 38
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 432,
+  "fields": {
+    "title": "Bmw Car Market",
+    "slug": "bmw_car_market",
+    "category": 38
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 433,
+  "fields": {
+    "title": "Chevrolet Cars",
+    "slug": "chevrolet_cars",
+    "category": 38
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 434,
+  "fields": {
+    "title": "Lexus Cars",
+    "slug": "lexus_cars",
+    "category": 38
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 435,
+  "fields": {
+    "title": "Ford Motors",
+    "slug": "ford_motors",
+    "category": 38
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 436,
+  "fields": {
+    "title": "G.M.C Cars",
+    "slug": "gmc_cars",
+    "category": 38
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 437,
+  "fields": {
+    "title": "Honda Cars",
+    "slug": "honda_cars",
+    "category": 38
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 438,
+  "fields": {
+    "title": "Hyundai Cars",
+    "slug": "hyundai_cars",
+    "category": 38
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 439,
+  "fields": {
+    "title": "Infiniti Cars",
+    "slug": "infiniti_cars",
+    "category": 38
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 440,
+  "fields": {
+    "title": "Innoson Motors",
+    "slug": "innoson_motors",
+    "category": 38
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 441,
+  "fields": {
+    "title": "Kia Motors",
+    "slug": "kia_motors",
+    "category": 38
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 442,
+  "fields": {
+    "title": "Mazda Cars",
+    "slug": "mazda_cars",
+    "category": 38
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 443,
+  "fields": {
+    "title": "Nissan Cars",
+    "slug": "nissan_cars",
+    "category": 38
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 444,
+  "fields": {
+    "title": "Renault Cars",
+    "slug": "renault_cars",
+    "category": 38
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 445,
+  "fields": {
+    "title": "Suzuki Cars",
+    "slug": "suzuki_cars",
+    "category": 38
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 446,
+  "fields": {
+    "title": "Volvo Cars",
+    "slug": "volvo_cars",
+    "category": 38
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 447,
+  "fields": {
+    "title": "Dump Truck Market",
+    "slug": "dump_truck_market",
+    "category": 39
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 448,
+  "fields": {
+    "title": "Lpg Tanks",
+    "slug": "lpg_tanks",
+    "category": 39
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 449,
+  "fields": {
+    "title": "Concrete Mixer",
+    "slug": "concrete_mixer",
+    "category": 39
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 450,
+  "fields": {
+    "title": "Forklift Market",
+    "slug": "forklift_market",
+    "category": 39
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 451,
+  "fields": {
+    "title": "Pail Loader Market",
+    "slug": "pail_loader_market",
+    "category": 39
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 452,
+  "fields": {
+    "title": "Bulldozer Market",
+    "slug": "bulldozer_market",
+    "category": 39
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 453,
+  "fields": {
+    "title": "Excavator Market",
+    "slug": "excavator_market",
+    "category": 39
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 454,
+  "fields": {
+    "title": "Crane Service",
+    "slug": "crane_service",
+    "category": 39
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 455,
+  "fields": {
+    "title": "Hyundai Trucks",
+    "slug": "hyundai_trucks",
+    "category": 39
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 456,
+  "fields": {
+    "title": "Volvo Trucks",
+    "slug": "volvo_trucks",
+    "category": 39
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 457,
+  "fields": {
+    "title": "Man Trucks",
+    "slug": "man_trucks",
+    "category": 39
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 458,
+  "fields": {
+    "title": "Mark Trucks",
+    "slug": "mark_trucks",
+    "category": 39
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 459,
+  "fields": {
+    "title": "Daf Truck",
+    "slug": "daf_truck",
+    "category": 39
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 460,
+  "fields": {
+    "title": "Mercedes Trucks",
+    "slug": "mercedes_trucks",
+    "category": 39
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 461,
+  "fields": {
+    "title": "Mitsubishi Canter",
+    "slug": "mitsubishi_canter",
+    "category": 39
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 462,
+  "fields": {
+    "title": "Hino Trucks",
+    "slug": "hino_trucks",
+    "category": 39
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 463,
+  "fields": {
+    "title": "Howo Trucks",
+    "slug": "howo_trucks",
+    "category": 39
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 464,
+  "fields": {
+    "title": "Tata Truck",
+    "slug": "tata_truck",
+    "category": 39
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 465,
+  "fields": {
+    "title": "Iveco Trucks",
+    "slug": "iveco_trucks",
+    "category": 39
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 466,
+  "fields": {
+    "title": "Scania Trucks",
+    "slug": "scania_trucks",
+    "category": 39
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 467,
+  "fields": {
+    "title": "I Need A B2B/B2C Website",
+    "slug": "i_need_a_b2b_b2c_website",
+    "category": 40
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 468,
+  "fields": {
+    "title": "I Need A Real Estate Website",
+    "slug": "i_need_a_real_estate_website",
+    "category": 40
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 469,
+  "fields": {
+    "title": "I Need A Business Website",
+    "slug": "i_need_a_business_website",
+    "category": 40
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 470,
+  "fields": {
+    "title": "I Need A Blog/Personal Website",
+    "slug": "i_need_a_blog_personal_website",
+    "category": 40
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 471,
+  "fields": {
+    "title": "I Need An Automobile Website",
+    "slug": "i_need_an_automobile_website",
+    "category": 40
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 472,
+  "fields": {
+    "title": "I Want To Learn More About Website",
+    "slug": "i_want_to_learn_more_about_website",
+    "category": 40
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 473,
+  "fields": {
+    "title": "I Need A Business Logo",
+    "slug": "i_need_a_business_logo",
+    "category": 41
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 474,
+  "fields": {
+    "title": "I Need A Poster",
+    "slug": "i_need_a_poster",
+    "category": 41
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 475,
+  "fields": {
+    "title": "I Need A Flyer",
+    "slug": "i_need_a_flyer",
+    "category": 41
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 476,
+  "fields": {
+    "title": "I Need An Event Poster",
+    "slug": "i_need_an_event_poster",
+    "category": 41
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 477,
+  "fields": {
+    "title": "Graphic Design Here",
+    "slug": "graphic_design_here",
+    "category": 41
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 478,
+  "fields": {
+    "title": "Buy Crypto",
+    "slug": "buy_crypto",
+    "category": 42
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 479,
+  "fields": {
+    "title": "Sell Crypto",
+    "slug": "sell_crypto",
+    "category": 42
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 480,
+  "fields": {
+    "title": "Buy Gifts Cards",
+    "slug": "buy_gifts_cards",
+    "category": 42
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 481,
+  "fields": {
+    "title": "Sell Gift Cards",
+    "slug": "sell_gift_cards",
+    "category": 42
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 482,
+  "fields": {
+    "title": "Learn Forex Trading Here",
+    "slug": "learn_forex_trading_here",
+    "category": 42
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 483,
+  "fields": {
+    "title": "Facebook Page Promotion",
+    "slug": "facebook_page_promotion",
+    "category": 43
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 484,
+  "fields": {
+    "title": "Facebook Video Promotion",
+    "slug": "facebook_video_promotion",
+    "category": 43
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 485,
+  "fields": {
+    "title": "Business Promotion",
+    "slug": "business_promotion",
+    "category": 43
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 486,
+  "fields": {
+    "title": "Product Promotion",
+    "slug": "product_promotion",
+    "category": 43
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 487,
+  "fields": {
+    "title": "Sitting Room Furniture Stores",
+    "slug": "sitting_room_furniture_stores",
+    "category": 44
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 488,
+  "fields": {
+    "title": "Bedroom Furniture Stores",
+    "slug": "bedroom_furniture_stores",
+    "category": 44
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 489,
+  "fields": {
+    "title": "Dinning Chair & Table Stores",
+    "slug": "dinning_chair__and__table_stores",
+    "category": 44
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 490,
+  "fields": {
+    "title": "Kitchen Furniture Stores",
+    "slug": "kitchen_furniture_stores",
+    "category": 44
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 491,
+  "fields": {
+    "title": "Bathroom Furniture Stores",
+    "slug": "bathroom_furniture_stores",
+    "category": 44
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 492,
+  "fields": {
+    "title": "Playstation & Gadgets Stores",
+    "slug": "playstation__and__gadgets_stores",
+    "category": 44
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 493,
+  "fields": {
+    "title": "Television Stores",
+    "slug": "television_stores",
+    "category": 44
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 494,
+  "fields": {
+    "title": "Washing Machine Stores",
+    "slug": "washing_machine_stores",
+    "category": 44
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 495,
+  "fields": {
+    "title": "Microwave & Refrigerator Stores",
+    "slug": "microwave__and__refrigerator_stores",
+    "category": 44
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 496,
+  "fields": {
+    "title": "I Want To Buy",
+    "slug": "i_want_to_buy",
+    "category": 45
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 497,
+  "fields": {
+    "title": "I Want To Sell",
+    "slug": "i_want_to_sell",
+    "category": 45
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 498,
+  "fields": {
+    "title": "I Want To Sell A Car",
+    "slug": "i_want_to_sell_a_car",
+    "category": 45
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 499,
+  "fields": {
+    "title": "I Want To Buy A Car",
+    "slug": "i_want_to_buy_a_car",
+    "category": 45
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 500,
+  "fields": {
+    "title": "I Want A Website Design",
+    "slug": "i_want_a_website_design",
+    "category": 45
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 501,
+  "fields": {
+    "title": "I Want A Graphic Design",
+    "slug": "i_want_a_graphic_design",
+    "category": 45
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 502,
+  "fields": {
+    "title": "I Am A Website Developer",
+    "slug": "i_am_a_website_developer",
+    "category": 45
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 503,
+  "fields": {
+    "title": "I Am A Graphic Designer",
+    "slug": "i_am_a_graphic_designer",
+    "category": 45
+  }
+},
+{
+  "model": "store.subcategory",
+  "pk": 504,
+  "fields": {
+    "title": "I Am An Facebook/Online Marketer",
+    "slug": "i_am_an_facebook_online_marketer",
+    "category": 45
+  }
+}
+]
