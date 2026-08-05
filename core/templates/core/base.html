@@ -15,7 +15,7 @@
     />
 
     {% block meta %} {% endblock %}
-    <link rel="shortcut icon" type="image" href="/media/uploads/logo.png" />
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/logo.png' %}" />
 
     <!--My Tailwind css file directory-->
 
@@ -111,7 +111,7 @@
                     <span class="font-semibold bg-clip-text">NaijaKet</span>
                   </span>
                   <img
-                    src="/media/uploads/logo.png"
+                    src="{% static 'images/logo.png' %}"
                     alt="logo"
                     class="items-center w-20 sm:w-12 h-auto"
                   />
