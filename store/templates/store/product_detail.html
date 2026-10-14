@@ -6,7 +6,9 @@
 {% block meta %}
 <meta property="og:title" content="{{product.title}}" />
 <meta property="og:description" content="{{ product.description }}" />
+{% if product.image %}
 <meta property="og:image" content="{{ product.image.url }}" />
+{% endif %}
 <meta
   property="og:url"
   content="{{ protocol }}://{{ domain }}{% url 'product_detail' product.category.slug product.subcategory.slug product.slug %}"
@@ -74,6 +76,7 @@
     <!-- LEFT: Media -->
     <div class="lg:col-span-2 space-y-4">
 
+      {% if product.image or product.image_2 or product.image_3 or product.image_4 %}
       <!-- Carousel card -->
       <div class="rounded-2xl border border-gray-200 bg-white p-3 shadow-sm">
         <div
@@ -86,26 +89,22 @@
               <div class="carousel-item active">
                 <img src="{{ product.image.url }}" class="media-frame" alt="Product Image" />
               </div>
-            {% else %}
-              <div class="carousel-item active">
-                <img src="{{ product.get_thumbnail }}" class="media-frame" alt="Product Thumbnail" />
-              </div>
             {% endif %}
 
             {% if product.image_2 %}
-              <div class="carousel-item">
+              <div class="carousel-item {% if not product.image %}active{% endif %}">
                 <img src="{{ product.image_2.url }}" class="media-frame" alt="Product Image2" />
               </div>
             {% endif %}
 
             {% if product.image_3 %}
-              <div class="carousel-item">
+              <div class="carousel-item {% if not product.image and not product.image_2 %}active{% endif %}">
                 <img src="{{ product.image_3.url }}" class="media-frame" alt="Product Image3" />
               </div>
             {% endif %}
 
             {% if product.image_4 %}
-              <div class="carousel-item">
+              <div class="carousel-item {% if not product.image and not product.image_2 and not product.image_3 %}active{% endif %}">
                 <img src="{{ product.image_4.url }}" class="media-frame" alt="Product Image4" />
               </div>
             {% endif %}
@@ -133,6 +132,7 @@
           </button>
         </div>
       </div>
+      {% endif %}
 
       {% if product.video %}
         <!-- Video card -->

@@ -13,6 +13,16 @@ from .models import Product
 
 
 class ProductForm(forms.ModelForm):
+    def clean(self):
+        cleaned_data = super().clean()
+        image = cleaned_data.get('image')
+        video = cleaned_data.get('video')
+
+        if not image and not video:
+            raise forms.ValidationError('Upload at least one product photo or video.')
+
+        return cleaned_data
+
     class Meta:
         model = Product
         fields = ('category' ,'subcategory', 'title', 'description', 'brand','model','price', 'image','image_2','image_3','image_4','video','condition', 'comments_enabled',)

@@ -30,7 +30,13 @@
             <a href="{% url 'product_detail' product.category.slug product.subcategory.slug product.slug %}" class="group no-underline shadow-sm">
               <div class="aspect-w-1 aspect-h-1">
                 <div class="w-full h-full overflow-hidden rounded-lg bg-gray-200">
+                  {% if product.image %}
                   <img src="{{ product.image.url }}" alt="Image of {{ product.title }}" class="object-cover object-center w-full h-full group-hover:opacity-75">
+                  {% elif product.video %}
+                  <video class="object-cover object-center w-full h-full group-hover:opacity-75" muted playsinline preload="metadata">
+                    <source src="{{ product.video.url }}" type="video/mp4">
+                  </video>
+                  {% endif %}
                 </div>
               </div>
               

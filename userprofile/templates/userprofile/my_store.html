@@ -70,7 +70,13 @@
             <a href="{% url 'edit_product' product.pk %}" class="group no-underline shadow-sm">
                 <div class="aspect-w-1 aspect-h-1 sm:aspect-w-1 sm:aspect-h-1 md:aspect-w-1 md:aspect-h-1 xl:aspect-w-1 xl:aspect-h-1">
                     <div class="w-30 h-40 sm:w-30 sm:h-40 overflow-hidden rounded-s-xl bg-gray-200">
+                        {% if product.image %}
                         <img src="{{ product.image.url }}" alt="Image of {{ product.title }}" class="object-cover object-center w-full h-full group-hover:opacity-75">
+                        {% elif product.video %}
+                        <video class="object-cover object-center w-full h-full group-hover:opacity-75" muted playsinline preload="metadata">
+                            <source src="{{ product.video.url }}" type="video/mp4">
+                        </video>
+                        {% endif %}
                     </div>
                 </div> 
                 

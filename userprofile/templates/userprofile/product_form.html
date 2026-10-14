@@ -8,6 +8,7 @@
 
     <form id="product-form" action="." method="post" enctype="multipart/form-data" class="space-y-5">
         {% csrf_token %}
+        {{ form.non_field_errors }}
 
         <div>
             <label for="id_category">{% trans "Category" %}*:</label>
@@ -47,8 +48,9 @@
           </div>
         
           <div class="mb-4">
-            <label for="id_image" class="block">{% trans "Image" %}*:</label>
+            <label for="id_image" class="block">{% trans "Image" %}:</label>
             {{ form.image }}
+            {{ form.image.errors }}
           </div>
           <div class="mb-4">
             <label for="id_image" class="block">{% trans "Image" %}:</label>
@@ -65,6 +67,7 @@
           <div class="mb-4">
             <label for="id_video" class="block">{% trans "video" %}:</label>
             {{ form.video }}
+            {{ form.video.errors }}
           </div>
           <div>
             <label for="id_condition">{% trans "Condition (optional)" %}:</label>

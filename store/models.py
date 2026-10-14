@@ -70,7 +70,7 @@ class Product(models.Model):
     brand = models.CharField(max_length=20 , blank=True, null=True)
     model = models.CharField(max_length=20 , blank=True, null=True)
     price = models.IntegerField()
-    image = models.ImageField(upload_to='uploads/product_images', null=True)
+    image = models.ImageField(upload_to='uploads/product_images', blank=True, null=True)
     image_2 = models.ImageField(upload_to='uploads/product_images', blank=True, null=True)
     image_3 = models.ImageField(upload_to='uploads/product_images', blank=True, null=True)
     image_4 = models.ImageField(upload_to='uploads/product_images', blank=True, null=True)
